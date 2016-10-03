@@ -1,0 +1,144 @@
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Hind+Siliguri|Radley';
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.firestock.ru/wp-content/uploads/2015/09/istock_000020116885large_-_copy-700x461.jpg);
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 72px; 
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+h2{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+h3{
+    font-family: 'Radley', serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+h4{
+    font-family: 'Radley', serif;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    
+}
+
+p{
+    font-family: Arial;
+    
+}
+
+button{
+    
+    border: 1px solid rgba(131, 250, 218, 0.6);
+    box-shadow: 2px 2px 10px 2px grey;
+    border-radius: 40px;
+    padding: 2px 12px;
+    background-color: rgba(209, 209, 209, 0.6);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Radley', serif;
+    font-size: 24px;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+button:hover a{
+    color: grey;
+}
+
+section{
+    width: 100%;
+}
+
+.header{
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 16px 4px black;
+    text-align: center;
+    /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/7c/db/fc/7cdbfcf4f4df0133ed5823561fbe1996.jpg);*/
+}
+
+.shopmin, .singinmin{
+    width: 78%;
+    height: 400px;
+    margin: 60px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.rewievsmin, .contactmin{
+    width: 78%;
+    height: 400px;
+    margin-left: 22%;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.footer{
+    height: 60px;
+    margin-top: 60px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.leftfirst{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: rgba(168, 242, 222, 0.6);
+    color: white;
+}
+
+.rightfirst{
+    width: 40%;
+    float: right;
+}
+
+.leftsecond{
+    width: 40%;
+    float: left;
+    
+}
+
+.rightsecond{
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-color: rgba(168, 242, 222, 0.6);
+    color: white;
+}
+
+.bord{
+    width: 70%;
+    height: 280px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 30px;
+    border: 1px solid black;
+}
+
