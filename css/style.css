@@ -8,16 +8,26 @@ body{
 }
 
 h1{
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+
+.h2small{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px; 
+    padding: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+h2{
     font-family: 'Abril Fatface', cursive;
     font-size: 72px; 
     padding: 20px;
     margin: auto;
     display: inline-block;
     border: 2px solid black;
-}
-
-h2{
-    font-family: 'Hind Siliguri', sans-serif;
 }
 
 h3{
@@ -74,10 +84,13 @@ section{
     width: 100%;
 }
 
-.header{
+header{
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 16px 4px black;
+    box-shadow: 0 4px 16px 4px #696969;
+}
+
+.header{
     text-align: center;
     /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/7c/db/fc/7cdbfcf4f4df0133ed5823561fbe1996.jpg);*/
 }
@@ -98,11 +111,12 @@ section{
     box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
 }
 
-.footer{
+footer{
     height: 60px;
     margin-top: 60px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 16px 4px #696969;
 }
 
 .leftfirst{
@@ -161,7 +175,7 @@ section{
 }
 
 @media (max-width: 767px){
-    h1{font-size: 36px;}
+    h2{font-size: 36px;}
     h3{font-size: 30px;}
     h5{margin: 10px; font-size: 14px;}
     button a{font-size: 16px;}
@@ -175,7 +189,7 @@ section{
 
 @media(max-width: 288px){
     .shopmin, .singinmin, .rewievsmin, .contactmin{height: 200px; width: 100%; margin: 20px auto 0}
-    h1{font-size: 20px;}
+    h2{font-size: 20px;}
     h3{font-size: 18px;}
     h5{font-size: 10px;}
     button a{font-size: 14px;}
