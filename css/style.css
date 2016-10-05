@@ -85,13 +85,17 @@ section{
 }
 
 header{
+    width: 100%;
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 16px 4px #696969;
+    position: fixed;
+    top: 0;
 }
 
 .header{
     text-align: center;
+    position: static;
     /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/7c/db/fc/7cdbfcf4f4df0133ed5823561fbe1996.jpg);*/
 }
 
@@ -112,11 +116,17 @@ header{
 }
 
 footer{
+    width: 100%;
     height: 60px;
     margin-top: 60px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 16px 4px #696969;
+    position: absolute;
+    bottom: 0;
+}
+.footer{
+    position: static;
 }
 
 .leftfirst{
@@ -154,6 +164,39 @@ footer{
     text-align: center;
     padding: 20px 30px;
     border: 1px solid black;
+}
+
+.logo{
+    float: left;
+}
+
+.menu{
+    
+}
+
+header ul{
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+header li{
+    float: right;
+    margin-left: 20px;
+}
+
+header li a{
+    text-decoration: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+header li:hover{
+    border-bottom: 2px solid black;
+}
+header li:hover a{
+    color: rgb(0, 178, 130);
 }
 
 
