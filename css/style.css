@@ -9,7 +9,6 @@ body{
 
 h1{
     font-family: 'Hind Siliguri', sans-serif;
-    
 }
 
 .h2small{
@@ -48,7 +47,16 @@ h5{
 }
 
 h6{
-    
+    font-family: 'Abril Fatface', cursive;
+    font-size: 12pt;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+h6 span{
+    color: dimgray;
 }
 
 p{
@@ -56,8 +64,7 @@ p{
     
 }
 
-button{
-    
+button{  
     border: 1px solid rgba(131, 250, 218, 0.6);
     box-shadow: 2px 2px 10px 2px grey;
     border-radius: 40px;
@@ -99,21 +106,14 @@ header{
     /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/7c/db/fc/7cdbfcf4f4df0133ed5823561fbe1996.jpg);*/
 }
 
-.shopmin, .singinmin{
+.shopmin, .singinmin, .rewievsmin, .contactmin{
     width: 80%;
     height: 400px;
-    margin: 60px 0;
+    margin: 60px auto;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
 }
 
-.rewievsmin, .contactmin{
-    width: 80%;
-    height: 400px;
-    margin-left: 20%;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
-}
 
 footer{
     width: 100%;
@@ -177,11 +177,13 @@ footer{
 header ul{
     list-style-type: none;
     margin-right: 100px;
+    text-align: center;
 }
 
 header li{
     float: right;
-    margin-left: 20px;
+    padding: 2px 10px;
+    margin-left: 10px;
 }
 
 header li a{
@@ -215,6 +217,8 @@ header li:hover a{
     .rightfirst, .leftsecond{width: 100%;}
     .bord{background-color: rgba(168, 242, 222, 0.6); padding: 10px;}
     h5{margin: 10px; font-size: 16px;}
+    
+    
 }
 
 @media (max-width: 767px){
