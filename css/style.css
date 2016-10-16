@@ -9,6 +9,8 @@ body{
 
 h1{
     font-family: 'Hind Siliguri', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .h2small{
@@ -91,6 +93,12 @@ section{
     width: 100%;
 }
 
+.section{
+    position: absolute;
+    top: 100px;
+    padding-bottom: 180px;
+}
+
 header{
     width: 100%;
     padding: 20px 0;
@@ -98,6 +106,7 @@ header{
     box-shadow: 0 4px 16px 4px #696969;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .header{
@@ -122,11 +131,21 @@ footer{
     padding: 0;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 16px 4px #696969;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 .footer{
     position: static;
+}
+
+.contacts{
+    width: 90%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 150px;
+    left: 5%;
 }
 
 .leftfirst{
@@ -166,6 +185,10 @@ footer{
     border: 1px solid black;
 }
 
+.bigbord{
+    width: 86%;
+}
+
 .logo{
     float: left;
 }
@@ -174,19 +197,35 @@ footer{
     
 }
 
-header ul{
+header ul,.contacts ul{
     list-style-type: none;
     margin-right: 100px;
     text-align: center;
 }
 
-header li{
+.contacts ul{
+    padding: 0;
+    margin: 40px 0;
+}
+
+.contacts ul li{
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px 0 10px;
+}
+
+.contacts li a{
+    padding: 0 10px;
+}
+
+header li,.contacts li{
     float: right;
     padding: 2px 10px;
     margin-left: 10px;
 }
 
-header li a{
+header li a,.contacts li a{
     text-decoration: none;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 18px;
@@ -242,4 +281,28 @@ header li:hover a{
     button a{font-size: 14px;}
     .bord{height: 140px; margin: 20px auto 0;}
     .footer{margin-top: 20px;}
+}
+
+/*-----------------------------Webkit------------------------------*/
+
+::-webkit-scrollbar {
+	  width: 10px;
+}
+
+::-webkit-scrollbar-button { 
+    background-color: rgba(168, 242, 222);
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+	  border: 1px solid black;
+	  border-radius: 10px;
+      background-color: rgba(168, 242, 222, 0.6);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
 }
