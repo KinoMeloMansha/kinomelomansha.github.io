@@ -21,11 +21,22 @@
         
         <!--My files-->
         <link rel="stylesheet" href="css/style.css">
+        
+        
+        <script>
+            body{
+                background-color: grey;
+            }
+        </script>
     </head>
-    <body >
-        <h1 style="color:#008080; text-align: center;">Анкета</h1>
-        <hr>
-        <table style="margin: auto;">
+    <body class="body" id="body">
+        <header>
+            <h1 style="color:#008080; text-align: center;">Анкета</h1>
+        </header>
+        <section class="section" style="padding-bottom: 0;">
+        <div class="ancketa" id="ancketa">
+        <div class="bord">
+        <table style="margin: auto;" >
             <tbody>
                 <tr>
                     <td><span>Ім'я:</span></td>
@@ -38,7 +49,7 @@
                     <br>
                 <tr>
                     <td><span>Стать:</span></td>
-                    <td colspan="2"><input name="sex" type="radio">Чоловіча<input name="sex" type="radio">Жіноча</td>
+                    <td colspan="2"><input name="sex" type="radio" checked>Чоловіча<input name="sex" type="radio">Жіноча</td>
                 </tr>
                     <br>
                 <tr>
@@ -67,9 +78,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><form><input type="submit" value="ОК" style="margin-right: 10px;"><input type="reset" value="Скасувати"></form></td>
+                    <td><form><input type="submit" value="ОК" style="margin-right: 10px;" class="button marg"></form></td>
+                    <td></td>
+                    <td><form><input type="reset" value="Скасувати" class="button marg"></form></td>
                 </tr>  
             </tbody>
         </table>
+        </div>
+        </div>
+        </section>
+        <footer>
+            <h6>Create by: <span> Nadia</span></h6>
+        </footer>
     </body>
 </html>
