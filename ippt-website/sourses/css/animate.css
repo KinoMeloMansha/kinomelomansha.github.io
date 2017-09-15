@@ -2,3 +2,8 @@
 	from{left: 120px;}
 	to{left: 0px;}
 }*/
+
+@keyframes logo-effect{
+	from{background-image: url(../img/logo.png);}
+	to{background-image: url(../img/nulp-logo.png);}
+}

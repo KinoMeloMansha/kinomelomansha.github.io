@@ -1,6 +1,7 @@
 .news-slider{
 	width: 100%;
 	/*height: calc(100vh - 111px);*/
+	/*min-height: 100%;*/
 }
 .news-slider .carousel-item{
 	/*height: 100vh;*/

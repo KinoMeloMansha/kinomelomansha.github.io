@@ -44,14 +44,11 @@ section.main-page{
 .main-page .section-menu .section-menu-li p{
 	font-family: sans-serif;
 	font-size: 16pt;
-	/*color: #559C3B;*/
 	color: #fff;
 }
 
 .main-page .section-menu .section-menu-li button{
 	color: #fff;
-	/*background-color: #559C3B;*/
-	/*background-color: #ffa735;*/
 	background-color: #66cdaa;
 	border: none;
 	outline: 0;
@@ -62,8 +59,6 @@ section.main-page{
 
 .main-page .section-menu .section-menu-li button:hover{
 	cursor: pointer;
-	/*color: #559C3B;*/
-	/*color: #ffa735;*/
 	color: #66cdaa;
 	background-color: #fff;
 }
@@ -186,9 +181,10 @@ section.main-page{
 
 .main-page .add-enother-news button{
 	color: #fff;
-	background-color: #66cdaa;
-	border: 1px solid #66cdaa;
+	background-color: #ffa735;
+	border: 1px solid #ffa735;
 	padding: 10px 20px;
+	font-weight: bold;
 }
 
 .main-page .add-enother-news button:hover{
