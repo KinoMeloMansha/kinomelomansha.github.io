@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IPPT - news archive</title>
+
+	<!-- Normalize css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+	<!-- Bootstrap styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
+
+	<!-- My styles -->
+	<link rel="stylesheet" href="sources/css/style.css">
+	<link rel="stylesheet" href="sources/css/news-archive.css">
+	<link rel="stylesheet" href="sources/css/animate.css">
+	<link rel="stylesheet" href="sources/css/responsive.css">
+</head>
+<body>
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="preload-img">
+			<img class="preload-logo" src="sources/img/logo.png" alt="logo">
+		</div>
+	</div>
+	<!-- HEADER -->
+	<header id="header" class="header">
+		<div class="navbar-contacts-language">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- <div class="navbar-contacts-language"></div>
+				<div class="navbar-menu"></div> -->
+				<div class="container">
+					<!-- <div class="row"> -->
+						<div class="col-2 col-md-2 align-self-center">
+							<div class="nav-logo">
+								<div class="nav-logo-img">
+									<a href="index.html">
+										<!-- <img src="sources/img/logo.png" alt="logo"> -->
+									</a> <!--  class="navbar-brand" -->
+								</div>
+								<div class="nav-logo-info">
+									<span>Інститут підприємництва та перспективних технологій</span>
+									<span>Національного університету "Львівська Політехніка"</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2 col-lg-1 align-self-center"> <!-- col-2 -->
+							<div class="nav-contacts">
+								<div class="row justify-content-end justify-content-md-center justify-content-lg-around">
+									<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3 col-md-2 col-lg-1 ml-auto align-self-center"> <!-- col-2 -->
+							<div class="nav-language">
+								<div class="row justify-content-end">
+									<span class="lang lang-ua active"><a href="#">UA</a></span>
+									<span class="lang lang-en"><a href="#">ENG</a></span>
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</nav>
+		</div>
+		<div class="navbar-menu">
+			<nav class="navbar navbar-expand-lg navbar-light"> <!--  bg-light -->
+				<!-- <div class="navbar-contacts-language"></div>
+				<div class="navbar-menu"></div> -->
+				<div class="container">
+					<div class="mobile-menu">
+						<div class="row justify-content-end">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--   -->
+					       		<!-- <span class="navbar-toggler-icon"></span> -->
+					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
+					    	</button>
+						</div>					
+					</div>
+					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
+						<!-- <div class="row justify-content-start"> -->
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							    <ul class="navbar-nav"> <!--  mr-auto -->
+							    	<!-- <div class="row justify-content-center justify-content-md-end"> -->
+							    		<li class="nav-item">
+									        <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="entrant.html">Вступнику</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="student.html">Студенту</a>
+									    </li>
+									    <li class="nav-item">
+									        <a class="nav-link" href="graduate.html">Випускнику</a>
+									    </li>
+									    <li class="nav-item active">
+									        <!-- <a class="nav-link" href="blog/index.html">Блог</a> -->
+									        <a class="nav-link" href="news-archive.html">Новини</a>
+									    </li>
+							    	<!-- </div> -->
+							    </ul>
+						    </div>
+						<!-- </div> -->
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="row justify-content-end">
+							<form class="form-inline my-2 my-lg-0 search-input">
+								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search">
+								<button class="btn btn-searching my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- NEWS ARCHIVE PAGE -->
+	<div id="news-archive" class="news-archive">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="news-archive-navbar">
+						<ul>
+							<li class="active"><a href="#allnews">Всі новини</a></li>
+							<li><a href="#advertisement">Оголошення</a></li>
+							<li><a href="#events">Події</a></li>
+							<li><a href="#news-of-chairs">Новини кафедр</a></li>
+							<li><a href="#student-college">Двіж студ. колегії</a></li>
+							<li><a href="#sport-life">Спортивне життя</a></li>
+							<li><a href="#news-from-world">Новини в світі</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-9">
+					<div class="news-archive-section">
+						<h2>Всі новини</h2>
+						<div class="news-archive-container">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<div class="news-archive-img">
+										<img src="sources/img/news/IMG_183222222.jpg" alt="news-img">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="news-archive-text">
+										<h3><a href="#news">Lorem Ipsum</a></h3>
+										<h4>25.09.2017, 12:00</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-archive-container">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<div class="news-archive-img">
+										<img src="sources/img/news/IMG_4786.jpg" alt="news-img">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="news-archive-text">
+										<h3><a href="#news">Lorem Ipsum</a></h3>
+										<h4>25.09.2017, 12:00</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-archive-container">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<div class="news-archive-img">
+										<img src="sources/img/news/IMG_4717.jpg" alt="news-img">
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="news-archive-text">
+										<h3><a href="#news">Lorem Ipsum</a></h3>
+										<h4>25.09.2017, 12:00</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit suscipit illo facere nihil doloribus, laborum aliquid perspiciatis nesciunt. Unde, numquam aliquam! Recusandae impedit unde distinctio non aspernatur accusamus, cum quidem.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-archive-footer">
+						<!-- <a href="#"><button>Завантажити ще</button></a> -->
+						<nav aria-label="Page navigation example">
+						    <ul class="pagination">
+							    <li class="page-item">
+							        <a class="page-link" href="#" aria-label="Previous">
+							        	<span aria-hidden="true">&laquo;</span>
+							        	<span class="sr-only">Previous</span>
+							        </a>
+							    </li>
+							    <li class="page-item"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item">
+							        <a class="page-link" href="#" aria-label="Next">
+							        	<span aria-hidden="true">&raquo;</span>
+							        	<span class="sr-only">Next</span>
+							        </a>
+							    </li>
+						    </ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-12 col-md-6">
+					<div class="contact-us">
+						<h3>Контактна інформація:</h3>
+						<p>Адрес: м. Львів, вул. Горбачевського, 18</p>
+						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Тел: (032) 297-07-55</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="network">
+						<h3>Ми в соціальних мережах:</h3>
+						<p>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>(с) 2017 Інститут Підприємництва та Перспективних Технологій. Всі права захищено.</p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<!-- My scripts -->
+	<script src="sources/js/script.js"></script>
+	<script src="sources/js/preloader.js"></script>
+	<script src="sources/js/animate.js"></script>
+</body>
+</html>

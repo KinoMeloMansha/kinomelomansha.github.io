@@ -143,12 +143,13 @@ section.main-page{
 	position: relative;
 	height: 210px;
 	padding: 10px 20px;
-	border: 1px solid #003965;
+	border: 1px solid #003865;
 	border-top: none;
 }
 
-.main-page .last-news .news-card .news-card-text h3{
-	color: #003965;
+.main-page .last-news .news-card .news-card-text h3 a{
+	color: #003865;
+	text-decoration: none;
 }
 
 .main-page .last-news .news-card .news-card-text h4{
@@ -159,7 +160,7 @@ section.main-page{
 }
 
 .main-page .last-news .news-card .news-card-text p{
-	color: #003965;
+	color: #333;
 }
 
 .main-page .last-news .news-card .news-card-text button{
@@ -189,7 +190,7 @@ section.main-page{
 
 .main-page .add-enother-news button:hover{
 	background-color: #fff;
-	color: #66cdaa;
+	color: #ffa735;
 	cursor: pointer;
 }
 

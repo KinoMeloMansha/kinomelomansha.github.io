@@ -43,8 +43,9 @@
 	position: relative;
 }
 
-.board-news.board-news-info .board-news-text h3{
+.board-news.board-news-info .board-news-text h3 a{
 	color: #fff;
+	text-decoration: none;
 }
 
 .board-news.board-news-info .board-news-text h4{

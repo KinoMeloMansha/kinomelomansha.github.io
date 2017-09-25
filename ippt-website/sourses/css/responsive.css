@@ -15,6 +15,9 @@
 	/*.news-slider{height: auto;}*/
 	.main-page .reviews .reviews-container .reviews-info .reviews-text p{font-size: 20px;}
 	.main-page .baners .baner{margin-bottom: 20px;}
+	.bg-img{background-size: 150%;}
+	.entrant-page .why-we:before, .students-page .interesting-info:before{display: none;}
+	.news-archive-navbar{display: none;}
 }
 
 @media(max-width: 767px){
@@ -24,6 +27,7 @@
 	.footer .contact-us{margin-bottom: 20px;}
 	.header .nav-logo-info{width: 250px; padding-top: 36px;}
 	.header .nav-logo-info span:last-child{display: none;}
+	.bg-img{min-height: 500px; background-size: 162%;}
 }
 
 @media(max-width: 576px){
@@ -34,6 +38,8 @@
 
 @media(max-width: 450px){
 	.header .navbar-contacts-language .nav-logo:hover .nav-logo-info{display: none;}
+	.bg-img{display: none;}
+	.entrant-page, .students-page{padding-top: 160px;}
 }
 
 
