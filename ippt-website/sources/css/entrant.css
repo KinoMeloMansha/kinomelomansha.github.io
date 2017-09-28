@@ -142,7 +142,7 @@
 	font-size: 20pt;
 }
 
-.entrant-page button{
+.btn-test button{
 	color: #fff;
 	background-color: #ffa735;
 	border: 1px solid #ffa735;
@@ -152,7 +152,7 @@
 	padding: 10px 20px;
 }
 
-.entrant-page button:hover{
+.btn-test button:hover{
 	cursor: pointer;
 	color: #ffa735;
 	background-color: #fff;
