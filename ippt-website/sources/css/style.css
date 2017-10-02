@@ -70,6 +70,10 @@ p{
 	color: #66cdaa;
 }
 
+.text-orange{
+	color: #ffa735;
+}
+
 .text-center{
 	text-align: center;
 }
@@ -133,7 +137,7 @@ i.icons-aqua{
 
 .btn-blue button{
 	background-color: #66cdaa;
-	border-color: #003568;
+	border-color: #003865;
 }
 
 .btn-blue button:hover{
@@ -668,7 +672,7 @@ section.main-page{
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 20px;
-	background-color: #003568;
+	background-color: #003865;
 	padding: 10px;
 	border-bottom: none;
 	margin-bottom: 10px;
@@ -681,7 +685,7 @@ section.main-page{
 .entrant-page .tab-content{
 	border: 1px solid #333;
 	padding: 20px 10px;
-	background-color: #003568;
+	background-color: #003865;
 	color: #fff;
 }
 
@@ -846,7 +850,7 @@ select.form-control:focus{
 }
 
 .libraries .lib-work-time ul li a{
-	color: #00cdaa;
+	color: #66cdaa;
 }
 
 .libraries .lib-info{
@@ -930,7 +934,7 @@ select.form-control:focus{
 }
 
 .page-link{
-	color: #00cdaa;
+	color: #66cdaa;
 	/*padding: 2px 10px;*/
 	line-height: normal;
 	color: #003865;
@@ -944,4 +948,197 @@ select.form-control:focus{
 .page-item:first-child .page-link,
 .page-item:last-child .page-link{
 	border-radius: 0;
+}
+
+/*=========================== MODALS ===================*/
+div.modal-content{
+	border-radius: 0;
+}
+
+.modal-body{
+	padding: 20px 30px;
+}
+
+div.modal-footer, div.modal-header{
+	border: none;
+}
+
+button.close:hover{
+	cursor: pointer;
+}
+
+
+/* ================================ INTRODUCTORY & PROFESSIONALY TESTS ========================================= */
+.introductory-test, .professional-test{
+	width: 100%;
+	height: auto;
+	padding: 60px 0px;
+	background-color: #fff;
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.introductory-test{
+	background-image: url('../img/news/IMG_4786.jpg');
+}
+
+.professional-test{
+	background-image: url('../img/news/IMG_4752.jpg');
+}
+
+.test{
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.test-title{
+	background-color: #003865;
+	padding: 30px 40px 20px;
+}
+
+.test h2{
+	margin-bottom: 0;
+}
+
+.test-container{
+	width: 100%;
+	height: auto;
+	padding: 20px 30px;
+}
+
+.test-container .task{
+	/*border-bottom: 1px solid #003865;*/
+	padding: 10px 0;
+}
+
+.test-footer{
+	background-color: #003865;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+
+/* ================================== NEWS PAGE ============================= */
+
+.news-page{
+	width: 100%;
+	height: auto;
+	padding: 160px 0px 40px;
+}
+
+.main-news{
+	padding: 20px 10px;
+}
+
+.news-header{
+	margin-bottom: 10px;
+}
+
+.news-header h2{
+	margin-bottom: 0;
+}
+
+.news-info{
+	
+}
+
+.news-info h6{
+	font-weight: 100;
+}
+
+.news-info h6 > span{
+	font-style: italic;
+}
+
+.news-body{
+	border-top: 5px solid #333;
+	border-bottom: 5px solid #333;
+	padding: 10px 0px;
+}
+
+.news-title{
+	padding: 10px;
+}
+
+.news-text{
+	padding: 10px 0;
+}
+
+.news-more-img{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.news-more-img .btn{
+	padding: 0;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.news-footer{
+	padding: 10px 0px;
+}
+
+.news-footer h3{
+	line-height: 32px;
+}
+
+.news-footer span{
+	vertical-align: middle;
+}
+
+.news-footer a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #66cdaa;
+	border: 1px solid #66cdaa;
+	/*margin-right: 10px;*/
+}
+
+.news-footer a:hover{
+	color: #66cdaa;
+	background-color: #fff;
+}
+
+.last-news-navbar, .top-news-navbar{
+	border: 2px solid #003865;
+}
+
+.last-news-navbar{
+	margin-bottom: 20px;
+}
+
+.last-news-navbar-header, .top-news-navbar-header{
+	background-color: #003865;
+	padding: 5px 0px;
+}
+
+.last-news-navbar-header h3, .top-news-navbar-header h3{
+	margin-bottom: 0;
+}
+
+hr{
+	margin: 2px auto;
+	width: 90%;
+}
+
+.last-news, .top-news{
+	padding: 15px 10px 10px;
+}
+
+.last-news-title, .top-news-title{
+	padding-top: 10px;
+}
+
+.last-news-text p, .top-news-text p{
+	text-align: justify;
+	margin-bottom: 0;
 }

@@ -26,6 +26,30 @@
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="testsModal" tabindex="-1" role="dialog" aria-labelledby="testsModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="testsModalLabel"></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+			<h3 class="text-center">Оберіть напрям підготовки:</h3>
+	      	<div class="row justify-content-center">
+	      			<a href="introductory-test.html" class="btn btn-test btn-orange"><button>Молодший спеціаліст</button></a>
+	      			<a href="introductory-test.html" class="btn btn-test btn-orange"><button>Магістратура</button></a>
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<!-- <a href="introductory-test.html" class="btn btn-test btn-orange" target="_blank"><button>Пройти тест</button></a> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<!-- HEADER -->
 	<header id="header" class="header">
 		<div class="navbar-contacts-language">
@@ -116,7 +140,7 @@
 						<h2 class="text-white">Не можеш визначитись із спеціалізацію?</h2>
 						<h3 class="text-white">Пройди тест та дізнайся які професійні схильності Тобі притаманні!</h3>
 					</div>
-					<a href="http://ippt.lp.edu.ua/test/" class="btn btn-test btn-orange"><button>Пройти тест</button></a>
+					<a href="professional-test.html" class="btn btn-test btn-orange" target="_blank"><button>Пройти тест</button></a>
 				</div>
 			</div>
 		</div>
@@ -260,7 +284,8 @@
 			<div class="container">
 				<h2 class="text-center">Не впевнений в своїх силах?</h2>
 				<h3>Пройди пробний вступний тест та отримай відповідь!</h3>
-				<a href="http://ippt.lp.edu.ua/abituriientam/testovi-zavdannia.html" class="btn btn-test btn-orange"><button>Пройти тест</button></a>
+				 <!-- target="_blank" introductory-test.html-->
+				<a class="btn btn-test btn-orange"><button data-toggle="modal" data-target="#testsModal">Пройти тест</button></a>
 			</div>
 		</div>
 

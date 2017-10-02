@@ -6,11 +6,13 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function(){
+	$('#directions-tabs').tab('show');
+	// $('#tests-modal').modal('show');
+	// $('#testResultModal').modal('show');
+
 	$('.carousel').carousel({
 		interval: 4000
 	});
-
-	$('#directions-tabs').tab('show');
 
 	var $carousel = $('#boardCarousel');
 	
