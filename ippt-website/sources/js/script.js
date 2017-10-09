@@ -3,6 +3,7 @@ $(window).on('load', function () {
 	$pr_anm = $preloader.find('.preload-logo');
 	$pr_anm.fadeOut('slow',function(){$(this).remove();});
 	$preloader.delay(500).fadeOut('slow');
+	$('html').css({'overflow-y': 'scroll'});
 });
 
 $(document).ready(function(){
