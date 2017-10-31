@@ -1,8 +1,7 @@
 $(document).ready(function(){
-	// $('.tabs a').click(function (e) {
- //  		e.preventDefault()
- //  		$(this).tab('show')
-	// });
+	$('#send').on('click', function(){
+		alert('Вибачте, дана функція тимчасово не працює.');
+	});
 
 	// ===== TABS VIDEO SOUND
 	$('.tabs-container').tab('show');
@@ -26,64 +25,8 @@ $(document).ready(function(){
     	$('[href="#edit-price"]').addClass('active');
     	$('#edit-price').addClass('active show').siblings().removeClass('active show');
     });
-
-    // ==== RANGES
-	// $( "#slider1" ).slider({
-	// 	min: 1,
-	// 	max: 3,
-	// 	values: [ 1 ],
-	// 	step: 1,
-	// 	slide: function(event, ui){
-	// 		console.log(ui.values);
-	// 	},
-	// });
-
-	// $( "#slider2" ).slider({
-	// 	min: 1,
-	// 	max: 3,
-	// 	values: [ 1 ],
-	// 	step: 1,
-	// 	slide: function(event, ui){
-	// 		console.log(ui.values);
-	// 	},
-	// });
-
-	// $( "#slider3" ).slider({
-	// 	min: 1,
-	// 	max: 3,
-	// 	values: [ 2 ],
-	// 	step: 1,
-	// 	slide: function(event, ui){
-	// 		console.log(ui.values);
-	// 	},
-	// });
-
-	// $( "#slider4" ).slider({
-	// 	min: 1,
-	// 	max: 5,
-	// 	values: [ 3 ],
-	// 	step: 1,
-	// 	slide: function(event, ui){
-	// 		console.log(ui.values);
-	// 	},
-	// });
-
     initSliders();
     $('.slider .ui-slider-handle').prepend('<span></span>');
-
-
-
-
-	// $( "#slider1" ).slider({
- //      range: true,
- //      min: 10,
- //      max: 60,
- //      values: [ 10 ],
- //      slide: function( event, ui ) {
- //        $( "#amount" ).val();
- //   		 console.log(ui.values);
- //      }
- //    });
 });
 
 // ===== SCROLLING
