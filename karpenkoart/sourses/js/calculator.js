@@ -65,7 +65,7 @@ function calculate() {
     var total = value1 + value2 + value3 + value4;
     $('#video-price').text(total + ' грн');
 
-    console.log(value4);
+    //console.log(value4);
 
     $('#slider1_value').text(value_natur1 + ' мин, ' + value1);
     $('#slider2_value').text(value_natur2 + ' шт ' + value2);
