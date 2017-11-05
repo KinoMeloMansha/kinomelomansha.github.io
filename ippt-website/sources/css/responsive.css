@@ -29,6 +29,10 @@
 	.header .nav-logo-info{width: 250px; padding-top: 36px;}
 	.header .nav-logo-info span:last-child{display: none;}
 	.bg-img{min-height: 500px; background-size: 162%;}
+	.hot-news{text-align: center; padding: 10px 0;}
+	.hot-news:hover .hide-text{visibility: hidden;}
+	.hot-news:hover{width: 12%; background-color: #59b263; color: #fff;}
+	.hot-news:hover i{display: block;}
 }
 
 @media(max-width: 576px){
