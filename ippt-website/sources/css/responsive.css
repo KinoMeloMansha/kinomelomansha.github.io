@@ -10,7 +10,7 @@
 	.header .navbar-contacts-language .nav-contacts a{margin-left: 10px;}
 	.header .navbar ul{text-align: center;}
 	.header .navbar .nav-item{font-size: 22px; padding-bottom: 20px;}
-	.header .navbar-light .navbar-nav .nav-link:hover{border-color: #003865;}
+	.header .navbar-light .navbar-nav .nav-link:hover{border-color: #2c3c4e;}
 	.search-input{display: none;}
 	/*.news-slider{height: auto;}*/
 	.main-page .reviews .reviews-container .reviews-info .reviews-text p{font-size: 20px;}
@@ -19,12 +19,13 @@
 	.entrant-page .why-we:before, .students-page .interesting-info:before{display: none;}
 	.news-archive-navbar{display: none;}
 	.introductory-test{background-size: 200%;}
+	.main-page .news-card-text{border: 1px solid #2c3c4e; border-top: none; padding: 10px;}
 }
 
 @media(max-width: 767px){
 	.main-page .reviews .reviews-container .reviews-info .reviews-img{width: 60%; margin-left: 20%;}
 	.main-page .reviews .reviews-container .reviews-info .reviews-text p{text-align: center;}
-	.main-page .reviews .reviews-container .reviews-info .reviews-text h5{text-align: center;}
+	.main-page .reviews .reviews-container .reviews-info .reviews-text h6{text-align: center;}
 	.footer .contact-us{margin-bottom: 20px;}
 	.header .nav-logo-info{width: 250px; padding-top: 36px;}
 	.header .nav-logo-info span:last-child{display: none;}
