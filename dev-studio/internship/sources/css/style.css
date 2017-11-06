@@ -4415,8 +4415,6 @@ body {
   padding-top: 50px;
   position: relative;
   z-index: -3;
-  /*==========Дьоргання слайдера==========*/
-  /*======================================*/
   /* The controlsy */ }
   .projects h2 {
     font-family: 'PFBeauSansPro Bold', sans-serif;
@@ -4641,18 +4639,14 @@ body {
   .projects .information.information-1, .projects .information.information-7 {
     left: 263px; }
   .projects .information.information-2, .projects .information.information-8 {
-    top: 329px;
     left: 263px; }
   .projects .information.information-3, .projects .information.information-9 {
-    top: 329px;
     left: 526px; }
   .projects .information.information-4, .projects .information.information-10 {
     top: 658px; }
   .projects .information.information-5, .projects .information.information-11 {
-    top: 658px;
     left: 263px; }
-  .projects .information.information-6, .projects .information.information-11 {
-    top: 658px;
+  .projects .information.information-6, .projects .information.information-12 {
     left: 263px; } }
 
 @media (max-width: 991px) {
@@ -4686,12 +4680,16 @@ body {
   .projects .information.information-1, .projects .information.information-7 {
     left: 0px; }
   .projects .information.information-2, .projects .information.information-8 {
+    top: 329px;
     left: 0px; }
   .projects .information.information-3, .projects .information.information-9 {
+    top: 329px;
     left: 0px; }
   .projects .information.information-5, .projects .information.information-11 {
+    top: 658px;
     left: 0px; }
-  .projects .information.information-6, .projects .information.information-11 {
+  .projects .information.information-6, .projects .information.information-12 {
+    top: 658px;
     left: 0px; } }
 
 @media (min-width: 990px) {
