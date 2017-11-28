@@ -126,7 +126,7 @@ i.large{
 
 
 /* ===== BUTTONS ===== */
-.btn button{
+.btn{
 	color: #fff;
 	border: none;
 	outline: 0;
@@ -134,30 +134,33 @@ i.large{
 	font-weight: bold;
 	padding: 10px 20px;
 	border: 1px solid;
+	border-radius: 0;
 }
 
-.btn button:hover{
-	background-color: #fff;
+.btn:hover{
+	/*background-color: #fff;*/
+	background-color: #F9F9F9;
 	cursor: pointer;
 }
 
-.btn-blue button{
+.btn-blue{
 	background-color: #59b263;
 	border-color: #2c3c4e;
 }
 
-.btn-blue button:hover{
+.btn-blue:hover{
 	color: #59b263;
 	box-shadow: 1px 1px 10px #333;
 }
 
-.btn-orange button{
+.btn-aqua{
 	background-color: #59b263;
 	border-color: #59b263;
+	color: #fff !important;
 }
 
-.btn-orange button:hover{
-	color: #59b263;
+.btn-aqua:hover{
+	color: #59b263 !important;
 }
 
 /* ===== IMG ===== */
@@ -335,6 +338,7 @@ i.large{
 	background-color: #2c3c4e;
 	color: #fff;
 	font-size: 22px;
+	border: none;
 }
 
 .header .btn-searching:hover{
@@ -537,12 +541,16 @@ section.main-page{
 	margin-bottom: 20px;
 	/*padding: 10px;*/
 	/*border: 1px solid #2c3c4e;*/
-	background-color: #fff;
-	box-shadow: 1px 2px 6px #999;
+	background-color: #2c3c4e;
+	/*box-shadow: 1px 2px 6px #999;*/
 }
 
 .main-page .news-card:first-child{
 	margin-left: 0;
+}
+
+.main-page .news-card-img{
+	height: 100%;
 }
 
 .main-page .news-card-text{
@@ -828,12 +836,12 @@ select.form-control:focus{
 	padding: 50px 0;
 }
 
-.training-resources h3{
+/*.training-resources h3{
 	width: 100%;
 	color: #333;
 	font-family: sans-serif;
 	font-size: 24pt;
-}
+}*/
 
 .training-resources h4{
 	width: 100%;
@@ -847,18 +855,21 @@ select.form-control:focus{
 }
 
 .libraries .lp-lib{
-	width: 100%;
-	padding: 10px;
+	width: 98%;
+	/*padding: 10px;*/
+	background-color: #2c3c4e;
 }
 
 .libraries .lib-img{
 	width: 100%;
-	background-color: #2c3c4e;
-	padding: 4px;
+}
+
+.libraries .lib-img{
+	height: 240px;
 }
 
 .libraries .lib-work-time{
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 .libraries .lib-work-time ul{
@@ -867,7 +878,7 @@ select.form-control:focus{
 }
 
 .libraries .lib-work-time ul li{
-	color: #333;
+	color: #fff;
 }
 
 .libraries .lib-work-time ul li span{
@@ -895,6 +906,11 @@ select.form-control:focus{
 	color: #59b263;
 }
 
+/* ===== NEARBY OBJECTS ===== */
+.nearby-objects{
+	margin-bottom: 30px;
+}
+
 
 /* =============================== NEWS-ARCHIVE, GALLERY ================================ */
 
@@ -904,7 +920,9 @@ select.form-control:focus{
 	padding: 160px 0px 40px;
 }
 
-.news-archive .news-archive-navbar, .gallery-page .gallery-navbar{
+.news-archive .news-archive-navbar, 
+.gallery-page .gallery-navbar,
+.about-us .about-us-navbar{
 	width: 100%;
 	height: auto;
 	/*border: 2px solid #2c3c4e;*/
@@ -912,7 +930,9 @@ select.form-control:focus{
 	background-color: #fff;
 }
 
-.news-archive .news-archive-navbar ul, .gallery-page .gallery-navbar ul{
+.news-archive .news-archive-navbar ul,
+ .gallery-page .gallery-navbar ul,
+ .about-us .about-us-navbar ul{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -922,31 +942,28 @@ select.form-control:focus{
 	/*padding: 10px 20px;*/
 }
 
-.news-archive .news-archive-navbar ul li.active,
-.news-archive .news-archive-navbar ul li.active:hover, 
-.gallery-page .gallery-navbar ul li.active, 
-.gallery-page .gallery-navbar ul li .active:hover{
-	background-color: #2c3c4e;
-} 
-
 .news-archive .news-archive-navbar ul li:hover, 
-.gallery-page .gallery-navbar ul li:hover{
+.gallery-page .gallery-navbar ul li:hover,
+.about-us .about-us-navbar ul li:hover{
 	background-color: #59b263;
 	cursor: pointer;
 }
 
 .news-archive .news-archive-navbar ul li a, 
-.gallery-page .gallery-navbar ul li a{
+.gallery-page .gallery-navbar ul li a, 
+.about-us .about-us-navbar ul li a{
+	width: 100%;
 	display: inline-block;
 	color: #333;
 	text-decoration: none;
 	padding: 10px 20px;
 }
-
-.news-archive .news-archive-navbar ul li.active a,
-.gallery-page .gallery-navbar ul li.active a{
+.news-archive .news-archive-navbar ul li a.active, 
+.gallery-page .gallery-navbar ul li a.active, 
+.about-us .about-us-navbar ul li a.active{
 	color: #fff;
 	font-weight: bold;
+	background-color: #2c3c4e;
 }
 
 .news-archive-container{
@@ -1124,7 +1141,8 @@ button.close:hover{
 	display: table;
 }
 
-.news-more-img .btn{
+.news-more-img .news-more-img-btn{
+	text-align: center;
 	padding: 0;
 	vertical-align: middle;
 	display: table-cell;
@@ -1192,6 +1210,25 @@ hr{
 .last-news-text p, .top-news-text p{
 	text-align: justify;
 	margin-bottom: 0;
+}
+
+/* =================== ABOUT US =============== */
+.about-us{
+	width: 100%;
+	height: auto;
+	padding: 160px 0px 40px;
+}
+
+.about-us-tabs{
+	display: block;
+}
+
+.leadership-card{
+
+}
+
+.leadership-card .leadership-text{
+	padding: 0px 10px; 
 }
 
 /* =================== FANCYBOX =============== */

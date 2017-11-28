@@ -8,6 +8,7 @@ $(window).on('load', function () {
 
 $(document).ready(function(){
 	$('#directions-tabs').tab('show');
+	$('#about-us-tabs').tab('show');
 	// $('#tests-modal').modal('show');
 	// $('#testResultModal').modal('show');
 

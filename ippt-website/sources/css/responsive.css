@@ -17,7 +17,8 @@
 	.main-page .baners .baner{margin-bottom: 20px;}
 	.bg-img{background-size: 150%;}
 	.entrant-page .why-we:before, .students-page .interesting-info:before{display: none;}
-	.news-archive-navbar{display: none;}
+	/*.news-archive-navbar{display: none;}*/
+	.news-archive .news-archive-navbar, .gallery-page .gallery-navbar{margin-bottom: 20px;}
 	.introductory-test{background-size: 200%;}
 	.main-page .news-card-text{border: 1px solid #2c3c4e; border-top: none; padding: 10px;}
 }
