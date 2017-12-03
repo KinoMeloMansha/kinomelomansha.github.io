@@ -3,7 +3,8 @@
 }
 
 @media(min-width: 992px){
-	.news-slider .carousel-item{height: 100vh;}
+	/*.news-slider .carousel-item{height: 100vh;}*/
+	.news-slider .carousel-item{height: 85vh;}
 }
 
 @media(max-width: 992px){

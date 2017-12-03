@@ -3,6 +3,7 @@
 }
 
 /* ===== MAIN STYLES ===== */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed')
 
 html, body{
 	margin: 0;
@@ -19,31 +20,31 @@ html{
 h1{
 	font-size: 32pt;
 	color: #333;
-	font-family: sans-serif;
+	font-family: 'Roboto', 'Roboto', sans-serif;
 	font-weight: bold;
 }
 
 h2{
 	font-size: 26pt;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 
 h3{
 	font-size: 18pt;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }
 
 h4{
 	font-size: 16pt;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h5{
 	font-size: 10pt;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-style: italic;
 }
 
@@ -53,7 +54,7 @@ h6{
 
 p{
 	font-size: 12pt;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .text-white{
@@ -72,12 +73,20 @@ p{
 	color: #59b263;
 }
 
-.text-orange{
-	color: #59b263;
+.text-bold{
+	font-weight: bold;
+}
+
+.text-italic{
+	font-style: italic;
 }
 
 .text-center{
 	text-align: center;
+}
+
+.text-right{
+	text-align: right;
 }
 
 a{
@@ -117,11 +126,11 @@ i.large{
 }
 
 .diagonal-block-left:before{
-	border-left: calc(100vw - 7px) solid #F9F9F9;
+	border-left: calc(100vw - 7px) solid #fff; /* #F9F9F9 */
 }
 
 .diagonal-block-right:before{
-	border-right: calc(100vw - 7px) solid #F9F9F9;
+	border-right: calc(100vw - 7px) solid #fff; /* #F9F9F9 */
 }
 
 
@@ -130,7 +139,7 @@ i.large{
 	color: #fff;
 	border: none;
 	outline: 0;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	padding: 10px 20px;
 	border: 1px solid;
@@ -172,6 +181,10 @@ i.large{
 .img img{
 	width: 100%;
 	height: 100%;
+}
+
+#deanery .img{
+	margin-bottom: 20px;
 }
 
 /* ===== PRELOADER ===== */
@@ -304,7 +317,7 @@ i.large{
 
 .header .navbar-menu ul li .nav-link{
 	color: white;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	padding: 0 10px;
 	border-bottom: 2px solid #2c3c4e;
@@ -613,7 +626,7 @@ section.main-page{
 
 .main-page .reviews .carousel-controls{
 	width: 10%;
-	background-color: #F9F9F9;
+	background-color: #fff;
 	opacity: 1;
 }
 
@@ -704,7 +717,7 @@ section.main-page{
 	width: 100%;
 	display: inline-block;
 	color: #fff;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	background-color: #2c3c4e;
 	padding: 10px;
@@ -839,14 +852,14 @@ select.form-control:focus{
 /*.training-resources h3{
 	width: 100%;
 	color: #333;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 24pt;
 }*/
 
 .training-resources h4{
 	width: 100%;
 	color: #333;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18pt;
 }
 
