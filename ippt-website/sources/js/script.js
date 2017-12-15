@@ -9,6 +9,7 @@ $(window).on('load', function () {
 $(document).ready(function(){
 	$('#directions-tabs').tab('show');
 	$('#about-us-tabs').tab('show');
+	$('.collapse').collapse();
 	// $('#tests-modal').modal('show');
 	// $('#testResultModal').modal('show');
 
@@ -43,6 +44,12 @@ $(document).ready(function(){
 	   $(this).addClass('active').siblings().removeClass('active');
 	   handled=true;
 	});
+
+	$('.post-text').on('click', function(){
+		var a = $(this).html();
+		$('.get-text').empty().append(a);
+	});
+
 });
 
 
