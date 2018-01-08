@@ -14,11 +14,11 @@
 	<link rel="stylesheet" href="../sources/font-awesome/css/font-awesome.min.css">
 
 	<!-- My styles -->
-	<link rel="stylesheet" href="../sources/css/style.css">
+	<link rel="stylesheet" href="../sources/css/ist.css">
 	<link rel="stylesheet" href="../sources/css/animate.css">
 	<link rel="stylesheet" href="../sources/css/responsive.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".scrolling-navbar" data-offset="50" class="body"> 
 	<!-- Preloader -->
 	<div id="preloader">
 		<div class="preload-img">
@@ -27,305 +27,389 @@
 	</div>
 
 	<!-- HEADER -->
-	<header id="header" class="header">
-		<div class="navbar-contacts-language">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- <div class="row"> -->
-						<div class="col-2 col-md-2 align-self-center">
-							<div class="nav-logo">
-								<div class="nav-logo-img">
-									<a href="index.html"></a>
-								</div>
-								<div class="nav-logo-info">
-									<span>Інститут підприємництва та перспективних технологій</span>
-									<span>Національного університету "Львівська Політехніка"</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-3 col-md-2 col-lg-1 align-self-center">
-							<div class="nav-contacts">
-								<div class="row justify-content-end justify-content-md-center justify-content-lg-around">
-									<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-									<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-									<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-3 col-md-2 col-lg-1 ml-auto align-self-center">
-							<div class="nav-language">
-								<div class="row justify-content-end">
-									<span class="lang lang-ua active"><a href="#">UA</a></span>
-									<span class="lang lang-en"><a href="#">ENG</a></span>
-								</div>
-							</div>
-						</div>
-					<!-- </div> -->
-				</div>
-			</nav>
-		</div>
-		<div class="navbar-menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<div class="mobile-menu">
-						<div class="row justify-content-end">
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					       		<span class="navbar-toggler-icon-fa"><i class="fa fa-bars" aria-hidden="true"></i></span>
-					    	</button>
-						</div>					
-					</div>
-					<div class="col-12 col-lg-6 align-self-center navbar-menu-del-padding">
-						<!-- <div class="row justify-content-start"> -->
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							    <ul class="navbar-nav"> <!--  mr-auto -->
-							    	<!-- <div class="row justify-content-center justify-content-md-end"> -->
-							    		<li class="nav-item active">
-									        <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="entrant.html">Вступнику</a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="student.html">Студенту</a>
-									    </li>
-									    <li class="nav-item">
-									        <a class="nav-link" href="graduate.html">Випускнику</a>
-									    </li>
-									    <li class="nav-item">
-									        <!-- <a class="nav-link" href="blog/index.html">Блог</a> -->
-									        <a class="nav-link" href="news-archive.html">Новини</a>
-									    </li>
-							    	<!-- </div> -->
-							    </ul>
-							    
-						    </div>
-						<!-- </div> -->
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="row justify-content-end">
-							<form class="form-inline my-2 my-lg-0 search-input">
-								<input class="form-control mr-sm-2" type="text" placeholder="Пошук..." aria-label="Search">
-								<button class="btn btn-searching my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
+	<header id="header-dep" class="header-dep">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar">  
+		<div class="container">
+			<a class="navbar-brand text-blue nav-link-scroll" href="#bg-img-ist">Кафедра ІСТ</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto col justify-content-end">
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#about-department">Про нас</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#education">Освітні програми</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#teachers">Працівники</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#science">Наукова діяльність</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#ist-stud-proj">Проекти</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-link-scroll" href="#partners">Партнери</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
 	</header>
 
-	<section id="ist-department" class="ist-department">
-		<div class="container">	
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="../index.html">Головна</a></li>
-				<li class="breadcrumb-item"><a href="../about-us.html">Про інститут</a></li>
-				<li class="breadcrumb-item"><a href="../about-us.html">Кафедри</a></li>
-				<li class="breadcrumb-item"><a href="ist.html">Кафедра ІСТ</a></li>
-				<li class="breadcrumb-item active get-text">Про кафедру</li>
-			</ol>
+	<!-- BACKGROUND IMG -->
+	<div id="bg-img-ist" class="bg-img-ist">
+		<h1 class="text-white">Кафедра<br>інформаційних систем<br>і технологій</h1>
+		<div class="transfotrm-diagonal-aqua"></div>
+		<div class="transfotrm-diagonal-blue"></div>
+	</div>
 
-			<div id="ist-department-tabs">
-				<div class="row">
-					<div class="col-12 col-lg-3">
-						<div class="ist-department-navbar">
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation"><a class="post-text active" href="#ist-base-info"  aria-controls="ist-base-info" role="tab" data-toggle="tab">Про кафедру</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-subdivisions" aria-controls="ist-subdivisions" role="tab" data-toggle="tab">Підрозділи кафедри</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-educational-programs" aria-controls="ist-educational-programs" role="tab" data-toggle="tab">Освітні програми</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-teachers" aria-controls="ist-teachers" role="tab" data-toggle="tab">Працівники кафедри</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-scientific-activity" aria-controls="ist-scientific-activity" role="tab" data-toggle="tab">Наукова діяльність</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-projects" aria-controls="ist-projects" role="tab" data-toggle="tab">Проекти кафедри</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-students-projects" aria-controls="ist-students-projects" role="tab" data-toggle="tab">Студентські проекти</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-student-practice-bases" aria-controls="ist-student-practice-bases" role="tab" data-toggle="tab">Бази практик студентів</a></li>
-								<li role="presentation"><a class="post-text" href="#ist-partners" aria-controls="ist-partners" role="tab" data-toggle="tab">Партнери</a></li>
-							</ul>
-						</div>
+	<!-- IST DEPARTMENT -->
+	<section id="ist-department" class="ist-department">
+		<div id="about-department" class="about-department">
+			
+			<div class="about-department-info-container">
+				<div class="container">
+					<div class="about-department-info">
+						<h2 class="text-white text-center">Про нас</h2>
+						<p class="text-white">Кафедра інформаційних систем і технологій (ІСТ) — це навчально-науковий підрозділ Інституту підприємництва та перспективних технологій Національного університету “Львівська політехніка”.  Кафедра інформаційних систем і технологій проводить підготовку фахівців з спеціальності 122 “Комп’ютерні науки” за освітніми рівнями:</p>
+						<ul>
+							<li class="text-white">бакалавр;</li>
+							<li class="text-white">магістр (спеціалізація – “Комп’ютерний еколого-економічний моніторинг”</li>
+						</ul>
+						<p class="text-white">При кафедрі діє циклова комісія, що забезпечує підготовку студентів за освітньо-кваліфікаційним рівнем “молодший спеціаліст” спеціальності 122 “Комп’ютерні науки”.</p>
+						<p class="text-white">Навчальна діяльність кафедри тісно пов’язана з науковою діяльністю науково-педагогічних працівників і студентів. Колектив кафедри інформаційних систем і технологій налічує понад 20 науково-педагогічних працівників (на постійному місці праці та за сумісництвом), з яких 2 доктора наук, професора та 15 кандидатів наук.</p>
+						<p class="text-white">Результати наукових досліджень викладачів опубліковані у фахових наукових вісниках та журналах, які включених до міжнародних наукометричних баз даних ( Web of Science, Scopus, Web of Knowledge, Google Scholar тощо),  матеріалах міжнародних наукових конференцій та семінарів.</p>
+						<!-- <p>Результати наукових досліджень викладачів опубліковані у фахових наукових вісниках та журналах, які включених до міжнародних наукометричних баз даних ( Web of Science, Scopus, Web of Knowledge, Google Scholar тощо),  матеріалах міжнародних наукових конференцій та семінарів.</p>
+						<p>Результати науково-дослідної роботи викладачів безпосередньо використовуються в навчальному процесі. Викладачі кафедри керують науковою діяльністю студентів, рецензують наукові і навчально-методичні роботи працівників інших навчальних закладів та наукових установ, а також здійснюють активну наукову та освітню діяльність у рамках національних і міжнародних зв’язків.</p>
+						<p>На сьогодні, кафедра є учасником програми академічної співпраці MSDN Academic Alliance (MSDN AA). Це дозволяє використовувати ліцензійні операційні системи, серверні продукти, засоби розробки та інше програмне забезпечення Microsoft, технічну підтримку, отримати доступ до інформаційних ресурсів. Крім цього, учасники програми залучені до академічного співтовариства за певними науковими тематиками.</p> -->
 					</div>
-					<div class="col-12 col-lg-9">
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active show" id="ist-base-info">
-								<h2>Про кафедру</h2>
-								<div class="ist-base-info">
-								    <p>
-								    	<span class="text-bold">Завідувач кафедри:</span> <span class="text-italic">Теслюк Василь Миколайович</span>
-								    	<br>
-								    	<span class="text-bold">Адреса:</span> <span class="text-italic">вул. Горбачевського, 18, 32-й н.к., кім. 506, 402</span>
-								    	<br>
-								    	<span class="text-bold">Телефон:</span> <span class="text-italic">(032) 258-24-75</span>
-								    	<br>
-								    	<span class="text-bold">E-mail:</span> <span class="text-italic">IST.dept@lpnu.ua</span>, <span>kist.ippt@gmail.com</span>
-								    	<br>
-								    	<span class="text-bold">Web-сайт:</span> <span><a href="departments/ist.html" class="text-aqua" target="_blank">ippt.lp.edu.ua/departments/ist.html</a></span>
-								    </p>
-								</div>
-								<hr style="margin-left: 0; width: 100%;">
-								<div class="ist-photo">
-									<div class="img">
-										<img src="../sources/img/department/ist/dep_ist.jpg" alt="ist-photo">
+				</div>
+			</div>
+			<div id="subdivisions" class="subdivisions">
+				<div class="container">
+					<h3 class="text-center">Підрозділи кафедри</h3>
+					<div class="row">
+						<div class="col-12">
+							<div class="subdivision">
+								<div class="subdivision-container">
+									<div class="subdivision-title">
+										<h4>Лабораторія проектування вбудованих систем</h4>
+									</div>
+									<div class="subdivision-description">
+										<p>Включає мікроконтролери AVR та STM32 з комплектами давачів і актюаторів. На базі лабораторії ведеться практична підготовка з навчальних дисциплін: "Архітектура комп’ютерів", "Основи електроніки", "Комп’ютерна схемотехніка та архітектура комп’ютерів", "Проектування Інтернет речей", "Проектування інформаційних управляючих систем екологічного моніторингу". Лабораторна база використовується при виконання дипломних магістерських робіт. Проводяться наукові дослідження.</p>
 									</div>
 								</div>
-								<hr style="margin-left: 0; width: 100%;">
-								<div class="ist-more-info">
-									<p>Кафедра інформаційних систем і технологій (ІСТ) — це навчально-науковий підрозділ Інституту підприємництва та перспективних технологій Національного університету “Львівська політехніка”.  Кафедра інформаційних систем і технологій проводить підготовку фахівців з спеціальності 122 “Комп’ютерні науки” за освітніми рівнями:</p>
-									<ul>
-										<li>бакалавр;</li>
-										<li>магістр (спеціалізація – “Комп’ютерний еколого-економічний моніторинг”).</li>
-									</ul>
-									<p>При кафедрі діє циклова комісія, що забезпечує підготовку студентів за освітньо-кваліфікаційним рівнем “молодший спеціаліст” спеціальності 122 “Комп’ютерні науки”.</p>
-									<p>Навчальна діяльність кафедри тісно пов’язана з науковою діяльністю науково-педагогічних працівників і студентів. Колектив кафедри інформаційних систем і технологій налічує понад 20 науково-педагогічних працівників (на постійному місці праці та за сумісництвом), з яких 2 доктора наук, професора та 15 кандидатів наук.</p>
-									<p>Результати наукових досліджень викладачів опубліковані у фахових наукових вісниках та журналах, які включених до міжнародних наукометричних баз даних ( Web of Science, Scopus, Web of Knowledge, Google Scholar тощо),  матеріалах міжнародних наукових конференцій та семінарів.</p>
-									<p>На базі кафедри функціонує секція “IT: технології, розробки, бізнес та інновації” Науково-практичної конференції “Проблеми та перспективи розвитку економіки і підприємництва та комп’ютерних технологій в Україні”, яка щорічно проходить на базі Інституту. У вересні 2016 року кафедрою інформаційних систем і технологій у співпраці з кафедрою соціальних комунікацій та інформаційної діяльності а також кафедрою числових методів та економічної інформації Жешувського університету (Польща) було організовано та проведено Міжнародну науково-практичну конференцію «Інформаційне суспільство: тенденції регіонального розвитку» (International Scientific and Practical Conference “Information Society: Regional Development Trends”, ISRDT-2016).</p>
-									<p>Результати науково-дослідної роботи викладачів безпосередньо використовуються в навчальному процесі. Викладачі кафедри керують науковою діяльністю студентів, рецензують наукові і навчально-методичні роботи працівників інших навчальних закладів та наукових установ, а також здійснюють активну наукову та освітню діяльність у рамках національних і міжнародних зв’язків.</p>
-									<p>На сьогодні, кафедра є учасником програми академічної співпраці MSDN Academic Alliance (MSDN AA). Це дозволяє використовувати ліцензійні операційні системи, серверні продукти, засоби розробки та інше програмне забезпечення Microsoft, технічну підтримку, отримати доступ до інформаційних ресурсів. Крім цього, учасники програми залучені до академічного співтовариства за певними науковими тематиками.</p>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="subdivision">
+								<div class="subdivision-container">
+									<div class="subdivision-title">
+										<h4>Локальна мережева академія CISCO</h4>
+									</div>
+									<div class="subdivision-description">
+										<p>Студенти мають можливість займатись в локальній мережевій академії CISCO, яка функціонує в Інституті. Після успішного завершення навчання видаються відповідні сертифікати міжнародного взірця.</p>
+									</div>
 								</div>
 							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-subdivisions">
-								<h2>Підрозділи кафедри (лабораторії, секції)</h2>
-								<div class="subdivisions-info">
-								   <h4 class="text-bold">Лабораторія проектування вбудованих систем</h4>
-								   <p>Включає мікроконтролери AVR та STM32 з комплектами давачів і актюаторів. На базі лабораторії ведеться практична підготовка з навчальних дисциплін: "Архітектура комп’ютерів", "Основи електроніки", "Комп’ютерна схемотехніка та архітектура комп’ютерів", "Проектування Інтернет речей", "Проектування інформаційних управляючих систем екологічного моніторингу". Лабораторна база використовується при виконання дипломних магістерських робіт. Проводяться наукові дослідження.</p>
-								   <h4 class="text-bold">Локальна мережева академія CISCO</h4>
-								   <p>Студенти мають можливість займатись в локальній мережевій академії CISCO, яка функціонує в Інституті. Після успішного завершення навчання видаються відповідні сертифікати міжнародного взірця.</p>
-								   <h4 class="text-bold">ITlab Науково – навчальна студентська лабораторія ІТ</h4>
-								   <p>Scientific research students laboratory IT Науково-навчальна студентська лабораторія інформаційних технологій створена для підтримки інноваційних студентських проектів з розробки програмних та апаратних рішень в рамках науково-навчальних напрямів кафедри.</p>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-educational-programs">
-								<h2>Освітні програми</h2>
-								<div class="ist-educational-programs-info">
-								   <p class="text-bold">ОР "МАГІСТР"</p>
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores molestias aperiam assumenda modi hic quae sed. Minus veniam quo, sint asperiores ipsum, possimus aliquid fuga architecto ad labore molestias.</p>
-								   <p class="text-bold">ОР "БАКАЛАВР"</p>
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor unde incidunt consequatur ipsa omnis? Quo, velit culpa beatae ea rem accusantium aspernatur temporibus, veritatis nam voluptatibus at unde quis.</p>
-								   <p class="text-bold">ОКР "МОЛОДШИЙ СПЕЦІАЛІСТ"</p>
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iste quos consequuntur amet nulla quisquam, fugiat perspiciatis voluptas consequatur dolore laudantium necessitatibus a ipsam voluptatum officiis, fugit modi minima ratione.</p>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-teachers">
-								<h2>Працівники кафедри</h2>
-								<div class="ist-teachers-info">
-								    <h4>
-								   		<span class="text-bold text-italic">Теслюк Василь Миколайович</span>
-								   		<span class="text-aqua"> - завідувач кафедри, д.т.н., професор</span>
-								   	</h4>
-								    <h4>
-								   		<span class="text-bold text-italic">Слюсарчук Юрій Миколайович</span>
-								   		<span class="text-aqua"> - доцент кафедри, к.ф.-м.н., доцент</span>
-								   	</h4>
-								    <h4>
-								   		<span class="text-bold text-italic">Ємець Володимир Федорович</span>
-								   		<span class="text-aqua"> - професор кафедри, д.ф.-м.н., професор</span>
-								   	</h4>
-								    <h4>
-								   		<span class="text-bold text-italic">Процько Ігор Омелянович</span>
-								   		<span class="text-aqua"> - доцент кафедри, к.т.н., доцент</span>
-								   	</h4>
-								    <h4>
-								   		<span class="text-bold text-italic">Машевська Марта Володимирівна</span>
-								   		<span class="text-aqua"> - старший викладач кафедри, к.т.н.</span>
-								   	</h4>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-scientific-activity">
-								<h2>Наукова діяльність</h2>
-								<div class="ist-scientific-activity-info">
-								    <p class="text-bold">Наукові напрями кафедри інформаційних систем і технологій:</p>
-								    <ul>
-								   	    <li>дослідження та проектування інтелектуальних систем (керівник – проф. Теслюк В.М.);</li>
-									   	<li>швидкі алгоритми цифрової обробки сигналів (керівник – доц. Процько І.О.);</li>
-									   	<li>автоматизація проектування і моделювання систем "Розумний будинок" та "Розумне місто";</li>
-									   	<li>розроблення та дослідження інтелектуальних систем комп'ютерного еколого-економічного моніторингу.</li>
-								    </ul>
-								    <p class="text-bold">Тематика наукових робіт та проектних розробок викладачів і студентів кафедри:</p>
-								    <ul>
-								    	<li>організація моделей баз і сховищ даних;</li>
-										<li>розроблення інформаційного забезпечення комп’ютерних систем, web-систем та Інтернет технологій;</li>
-										<li>проектування інформаційного забезпечення систем аналізу та підтримки прийняття рішень.</li>
-								    </ul>
-								    <p>В рамках наукової роботи зі студентами вивчаються новітні технології розробки програмного забезпечення, зокрема під мобільну операційну систему Android та з використання апаратно-обчислювальної платформи Arduino.</p>
-									<p class="text-bold">Публікації:</p>
-									<ul>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-										<li>Lorem ipsum</li>
-									</ul>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-projects">
-								<h2>Проекти кафедри</h2>
-								<div class="ist-projects-info">
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laboriosam voluptatibus fugiat adipisci debitis velit ipsa ad unde neque quia illo tempore cum possimus dolore aliquam commodi, rem, porro dolorem.</p>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-students-projects">
-								<h2>Студентські проекти</h2>
-								<div class="ist-students-projects-info">
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore autem voluptatum, nobis quisquam rerum soluta! Saepe voluptatum laborum voluptatem dolor molestiae, odit sapiente reprehenderit quis! Minima magnam nostrum, voluptate ea!</p>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-student-practice-bases">
-								<h2>Бази практик студентів</h2>
-								<div class="ist-student-practice-bases-info">
-								   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rem excepturi, nesciunt dolore veritatis magni, illo cumque in, dolorem accusamus doloremque tenetur repellat architecto! Quasi iure libero, excepturi ea saepe?</p>
-								</div>
-							</div>
-
-							<div role="tabpanel" class="tab-pane fade in" id="ist-partners">
-								<h2>Партнери</h2>
-								<div class="ist-partners-info">
-								 	<ul>
-								 		<li>Природний заповідник „Розточчя”</li>
-										<li>Державний історико-культурний заповідник "Тустань"</li>
-										<li>Компанія Epam Systems</li>
-										<li>Компанія N-iX</li>
-								 	</ul>
+						</div>
+						<div class="col-12">
+							<div class="subdivision">
+								<div class="subdivision-container">
+									<div class="subdivision-title">
+										<h4>ITlab Науково – навчальна студентська лабораторія ІТ</h4>
+									</div>
+									<div class="subdivision-description">
+										<p>Scientific research students laboratory IT Науково-навчальна студентська лабораторія інформаційних технологій створена для підтримки інноваційних студентських проектів з 	розробки програмних та апаратних рішень в рамках науково-навчальних напрямів кафедри.</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="education" class="education">
+			<div class="education-container">
+				<div class="container">
+					<h2 class="text-white text-center">Освітні програми</h2>
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<div class="education-part">
+								<div class="education-part-title">
+									<h4 class="text-white text-center">ОКР "МОЛОДШИЙ СПЕЦІАЛІСТ"</h4>
+								</div>
+								<div class="education-part-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia vitae voluptates quod at saepe reprehenderit totam aliquam architecto fugiat, sunt cumque consequatur obcaecati laudantium illo ratione?</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="education-part">
+								<div class="education-part-title">
+									<h4 class="text-white text-center">ОР "БАКАЛАВР"</h4>
+								</div>
+								<div class="education-part-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia vitae voluptates quod at saepe reprehenderit totam aliquam architecto fugiat, sunt cumque consequatur obcaecati laudantium illo ratione?</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="education-part">
+								<div class="education-part-title">
+									<h4 class="text-white text-center">ОР "МАГІСТР"</h4>
+								</div>
+								<div class="education-part-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia vitae voluptates quod at saepe reprehenderit totam aliquam architecto fugiat, sunt cumque consequatur obcaecati laudantium illo ratione?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aqua-bg"></div>
+		</div>
+
+		<div id="teachers" class="teachers">
+			<div class="container">
+				<h2 class="text-center">Працівники кафедри</h2>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Теслюк Василь Миколайович </a></h4>
+							<h6 class="text-aqua">завідувач кафедри, д.т.н., професор</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Слюсарчук Юрій Миколайович  </a></h4>
+							<h6 class="text-aqua">доцент кафедри, к.ф.-м.н., доцент</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Ємець Володимир Федорович </a></h4>
+							<h6 class="text-aqua">професор кафедри, д.ф.-м.н., професор</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Процько Ігор Омелянович </a></h4>
+							<h6 class="text-aqua">доцент кафедри, к.т.н., доцент</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Машевська Марта Володимирівна </a></h4>
+							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Баран Мар'яна Михайлівна  </a></h4>
+							<h6 class="text-aqua">доцент кафедри, к.ф.-м.н., доцент</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Зелінський Андрій Ярославович </a></h4>
+							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Угрин Леся Євгенівна </a></h4>
+							<h6 class="text-aqua">старший викладач кафедри</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Борейко Олег Юрійович </a></h4>
+							<h6 class="text-aqua">асистент кафедри, к.т.н.</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Щербак Ілона Миколаївна </a></h4>
+							<h6 class="text-aqua">старший викладач кафедри, к.т.н.</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Лиса Наталія Корнеліївна </a></h4>
+							<h6 class="text-aqua">асистент кафедри, к.т.н.</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Навитка Марія Любомирівна </a></h4>
+							<h6 class="text-aqua">старший викладач кафедри</h6>
+							<hr>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="teacher">
+							<h4 class="text-blue"><a href="teacher-ist.html">Максим'юк Катерина Вікторівна </a></h4>
+							<h6 class="text-aqua">асистент кафедри</h6>
+							<hr>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="science" class="science">
+			<div class="science-container">
+				<div class="container">
+					<h2 class="text-white text-center">Наукова діяльність</h2>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="science-card">
+								<h4 class="text-center">Наукові напрями кафедри інформаційних систем і технологій</h4>
+								<hr>
+								<ul>
+									<li>дослідження та проектування інтелектуальних систем (керівник – проф. Теслюк В.М.)</li>
+									<li>швидкі алгоритми цифрової обробки сигналів (керівник – доц. Процько І.О.)</li>
+									<li>автоматизація проектування і моделювання систем "Розумний будинок" та "Розумне місто"</li>
+									<li>розроблення та дослідження інтелектуальних систем комп'ютерного еколого-економічного моніторингу</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="science-card">
+								<h4 class="text-center">Тематика наукових робіт та проектних розробок викладачів і студентів кафедри</h4>
+								<hr>
+								<ul>
+									<li>організація моделей баз і сховищ даних</li>
+									<li>розроблення інформаційного забезпечення комп’ютерних систем, web-систем та Інтернет технологій</li>
+									<li>проектування інформаційного забезпечення систем аналізу та підтримки прийняття рішень</li>
+								</ul>
+								<p>В рамках наукової роботи зі студентами вивчаються новітні технології розробки програмного забезпечення<!-- , зокрема під мобільну операційну систему Android та з використання апаратно-обчислювальної платформи Arduino -->.</p>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="science-card publications">
+								<h4 class="text-center">Публікації</h4>
+								<hr>
+								<div class="publication">
+									<p><span class="text-aqua">Lorem Ipsum, асистент кафедри, к.т.н.</span>, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero itaque sint, dolor similique maxime natus eum, animi ad officia amet quod nisi quisquam modi dolore. Ullam quia, dicta ipsa.</p>
+								</div>
+								<div class="publication">
+									<p><span class="text-aqua">Lorem Ipsum, асистент кафедри, к.т.н.</span>, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero itaque sint, dolor similique maxime natus eum, animi ad officia amet quod nisi quisquam modi dolore. Ullam quia, dicta ipsa.</p>
+								</div>
+								<div class="more-publications">
+									<a href="#" class="btn btn-aqua">Більше публікацій</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blue-bg"></div>
+		</div>
+
+		<div id="ist-stud-proj" class="ist-stud-proj">
+			<div class="container">
+				<h2 class="text-center">Студентські досягнення</h2>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="proj-card">
+							<div class="row no-gutters">
+								<div class="col-12 col-md-5">
+									<div class="proj-img">
+										<img src="../sources/img/news/IMG_4752.jpg" alt="proj-img">
+									</div>
+								</div>
+								<div class="col-12 col-md-7">
+									<div class="proj-info">
+										<h3 class="text-white">Lorem Ipsum</h3>
+										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum mollitia fuga ut atque dolorum.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="proj-card">
+							<div class="row no-gutters">
+								<div class="col-12 col-md-5">
+									<div class="proj-img">
+										<img src="../sources/img/news/IMG_4731.jpg" alt="proj-img">
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class="proj-info">
+										<h3 class="text-white">Lorem Ipsum</h3>
+										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptate reiciendis adipisci architecto nisi dolore!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="more-proj">
+					<a href="#" class="btn btn-blue">Переглянути усі</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="partners" class="partners">
+			<div class="container">
+				<h2 class="text-white text-center">Партнери</h2>
+				<div class="row">
+					<div class="col-12">
+						<div class="partner">
+							<h4>Природний заповідник "Розточчя"</h4>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="partner">
+							<h4>Державний історико-культурний заповідник "Тустань"</h4>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="partner">
+							<h4>Компанія Epam Systems</h4>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="partner">
+							<h4>Компанія N-iX</h4>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- FOOTER -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-12 col-md-6">
-					<div class="contact-us text-white">
-						<h3>Контактна інформація:</h3>
-						<p>Адрес: м. Львів, вул. Горбачевського, 18</p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
-						<p>Тел: (032) 297-07-55</p>
-					</div>
-				</div>
-				<div class="col-12 col-md-6">
-					<div class="network">
-						<h3 class="text-white">Ми в соціальних мережах:</h3>
-						<p class="text-white">
-							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-						</p>
-					</div>
-				</div>
-			</div>
 			<div class="copyright">
 				<p class="text-aqua">(с) 2017 Інститут Підприємництва та Перспективних Технологій. Всі права захищено.</p>
 			</div>
 		</div>
 	</footer>
+	
+
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -333,7 +417,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+	<!-- Plugins scripts -->
+	<script src="../plugins/jparticle.jquery.min.js"></script>
+
 	<!-- My scripts -->
-	<script src="../sources/js/script.js"></script>
+	<script src="../sources/js/ist.js"></script>
 </body>
 </html>

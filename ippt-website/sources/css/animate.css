@@ -7,3 +7,24 @@
 	from{background-image: url(../img/logo.png);}
 	to{background-image: url(../img/nulp-logo.png);}
 }
+
+@keyframes csi-hidden-animation{
+	0% {opacity: 1;}
+	25% {opacity: 0;}
+	50% {opacity: 0;}
+	75% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes csi-visible-animation{
+	0% {opacity: 0;}
+	25% {opacity: 0;}
+	50% {opacity: 1;}
+	75% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes scroll-down-blink{
+	from {opacity: .5; width: 50px; height: 50px;}
+	to {opacity: 1; width: 60px; height: 60px; margin-left: -30px;}
+}

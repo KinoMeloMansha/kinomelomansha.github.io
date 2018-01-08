@@ -1,3 +1,4 @@
+// Preloader
 $(window).on('load', function () {
 	var $preloader = $('#preloader'),
 	$pr_anm = $preloader.find('.preload-logo');
@@ -49,7 +50,6 @@ $(document).ready(function(){
 		var a = $(this).html();
 		$('.get-text').empty().append(a);
 	});
-
 });
 
 

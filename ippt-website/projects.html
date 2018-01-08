@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>IPPT - Education and Science</title>
+	<title>IPPT - Projects page</title>
 
 	<!-- Normalize css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -52,6 +52,14 @@
 							</div>
 						</div>
 					</div>
+					<!-- <div class="col-12 col-sm-3 col-md-2 col-lg-1 ml-auto align-self-center">
+						<div class="nav-language">
+							<div class="row justify-content-end">
+								<span class="lang lang-ua active"><a href="#">UA</a></span>
+								<span class="lang lang-en"><a href="#">ENG</a></span>
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</nav>
 		</div>
@@ -105,66 +113,70 @@
 		</div>
 	</header>
 
-	<section id="education-science" class="education-science">
+	<section id="projects-page" class="projects-page">
 		<div class="container">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-				<li class="breadcrumb-item active">Освіта і наука</li>
+				<li class="breadcrumb-item"><a href="about-us.html">Про інститут</a></li>
+				<li class="breadcrumb-item active">Проекти</li>
 			</ol>
-			<div class="educational-programs">
-				<h2 class="text-center">Освітні програми</h2>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Магістр</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam quam commodi, odio quaerat tenetur dolorem consequatur provident, delectus sapiente sequi iusto nisi dicta voluptates ratione quisquam maiores qui obcaecati.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Бакалавр</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi quibusdam laboriosam consectetur natus. Obcaecati unde iusto facilis rem sequi iste debitis adipisci similique fugiat doloribus. Beatae hic debitis, ipsa.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="program-card">
-							<div class="program-title">
-								<h3 class="text-center text-white">Молодший спеціаліст</h3>
-							</div>
-							<div class="program-info">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequatur maiores illo necessitatibus. Ex architecto quo excepturi, consectetur qui vel. Doloremque suscipit impedit explicabo laborum laboriosam sint corrupti culpa quas.</p>
-							</div>
-						</div>
-					</div>
+
+			<div class="ippt-projects">
+				<h2 class="text-center text-blue">Проекти Інституту Підприємництва</h2>
+				<div id="ipptProjectsAccordion" class="ipptProjectsAccordion" data-children=".item">
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject1" aria-expanded="true" aria-controls="ipptProject1">Проект 1</a>
+				    <div id="ipptProject1" class="collapse" role="tabpanel">
+				      <p class="mb-3">
+				        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+				      </p>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject2" aria-expanded="false" aria-controls="ipptProject2">Проект 2</a>
+				    <div id="ipptProject2" class="collapse show" role="tabpanel">
+				      <p class="mb-3">
+				        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				      </p>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#ipptProjectsAccordion" href="#ipptProject3" aria-expanded="false" aria-controls="ipptProject3">Проект 2</a>
+				    <div id="ipptProject3" class="collapse show" role="tabpanel">
+				      <p class="mb-3">
+				        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				      </p>
+				    </div>
+				  </div>
 				</div>
 			</div>
-			<div class="conferences">
-				<h2 class="text-center">Наукові конференції</h2>
-				<div class="scientific-pedagogical-conferences conference">
-					<div class="conference-title">
-						<h3 class="text-white">Науково педагогічних працівників</h3>
-					</div>
-					<div class="conferences-info text-right">
-						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores accusamus, obcaecati dicta quasi harum sequi quos corrupti debitis aliquam cumque aspernatur ex officia, quam provident beatae sit asperiores perferendis?</p>
-						<a href="news-archive.html" class="btn btn-aqua">Переглянути</a>
-					</div>
-				</div>
-				<div class="students-conferences conference">
-					<div class="conference-title">
-						<h3 class="text-white">Студентів</h3>
-					</div>
-					<div class="conferences-info text-right">
-						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore placeat doloribus, earum, omnis delectus iure ducimus. Ipsum, necessitatibus doloribus beatae non labore optio incidunt dignissimos, distinctio fugit ad blanditiis veritatis.</p>
-						<a href="news-archive.html" class="btn btn-aqua">Переглянути</a>
-					</div>
+			<div class="students-projects">
+				<h2 class="text-center text-blue">Проекти наших студентів</h2>
+				<div id="studProjectsAccordion" class="studProjectsAccordion" data-children=".item">
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject1" aria-expanded="true" aria-controls="studProject1">Проект 1</a>
+				    <div id="studProject1" class="collapse" role="tabpanel">
+				      <p class="mb-3">
+				        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+				      </p>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject2" aria-expanded="false" aria-controls="studProject2">Проект 2</a>
+				    <div id="studProject2" class="collapse show" role="tabpanel">
+				      <p class="mb-3">
+				        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				      </p>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a data-toggle="collapse" data-parent="#studProjectsAccordion" href="#studProject3" aria-expanded="false" aria-controls="studProject3">Проект 2</a>
+				    <div id="studProject3" class="collapse show" role="tabpanel">
+				      <p class="mb-3">
+				        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				      </p>
+				    </div>
+				  </div>
 				</div>
 			</div>
 		</div>
@@ -200,7 +212,7 @@
 			</div>
 		</div>
 	</footer>
-
+	
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
