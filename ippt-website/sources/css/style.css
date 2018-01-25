@@ -403,14 +403,37 @@ i.large{
 .bg-img{
 	width: 100%;
 	min-height: 100%;
-	background-image: url(../img/news/IMG_4865.jpg);
+	background-image: url(../img/news/IMG_183222222.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
     background-attachment: fixed;
     background-size: cover;
-	padding-top: 350px; 
+	/*padding-top: 350px; */
 	text-align: center;
+	display: table;
+}
+
+.bg-img .img-container{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	z-index: 12;
+}
+
+.bg-img .img-container img{
+	display: inline-block;
+	width: 20%;
+}
+
+.aqua-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(89, 178, 99, .8);
 }
 
 .bg-linear-gradient{
@@ -763,6 +786,11 @@ section.main-page{
 
 .entrant-page .tabs-menu{
 	text-align: center;
+}
+
+.entrant-page .tabs-menu hr{
+	height: 1px;
+	background-color: #fff;
 }
 
 /* ===== NO DETERMINE ===== */
