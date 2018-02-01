@@ -65,6 +65,7 @@ ul{
 	text-decoration: none;
 	font-weight: bold;
 	color: #FF1493;
+	transition: all .2s ease-in-out;
 }
 .navbar ul li a:visited{
 	color: #C71585;
