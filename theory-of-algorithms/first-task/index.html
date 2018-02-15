@@ -86,7 +86,7 @@
 		}
 
 		function createTableRow(obj, text){
-			$('#tbody').append('<tr>' + '<td>' + obj.ID + '</td>' + '<td>' + obj.Numeric + '</td>' + '<td>' + obj.Multipliers + '</td>' + '<td class="test" id="test-' + obj.ID + '">' + text.slice(1) + '</td>' + '</tr>');
+			$('#tbody').append('<tr>' + '<td>' + obj.ID + '</td>' + '<td>' + obj.Numeric + '</td>' + '<td>' + obj.Multipliers + '</td>' + '<td class="test" id="test-' + obj.ID + '">' + text.slice(3) + '</td>' + '</tr>');
 		}
 
 		function task2(k, obj){
@@ -101,8 +101,8 @@
 			});
 
 			for (var key in result){
-				var t =  key + "^" + result[key];
-				text = text + "+" + t;
+				var t =  key + "<sup>" + result[key] + "</sup>";
+				text = text + " + " + t;
 			}
 
 			if(obj.Numeric <= 1){
