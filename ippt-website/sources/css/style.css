@@ -645,7 +645,22 @@ section.main-page{
 	text-align: center;
 }
 
-/*======== DIPLOMA ========*/
+/*======== SPORT LIFE ======== */
+.sport-life{
+	width: 100%;
+	height: auto;
+	padding: 40px 0;
+}
+
+.sport-life .sport-life-img{
+	margin-bottom: 20px;
+}
+
+.more-sport-life-img{
+	text-align: center;
+}
+
+/* ======== DIPLOMA ======== */
 .main-page .diploma{
 	width: 100%;
 	height: auto;
@@ -770,107 +785,46 @@ section.main-page{
 }
 
 
-/* ======================================= ENTRANT-PAGE ==================================== */
+/* ================================ ENTRANT-PAGE ================================ */
 
 .entrant-page{
-	position: relative;
-}
-
-/* ===== WHY WE ===== */
-.entrant-page .why-we{
 	width: 100%;
-	padding: 40px 0px 0px;
-	margin-bottom: 50px;
-	position: relative;
+	height: auto;
+	padding: 160px 0px 40px;
 }
 
-.entrant-page .why-we .our-think{
-	padding: 30px 10px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	text-align: center;
-}
-
-.entrant-page .why-we .our-think:hover{
-	background-color: #59b263;
-	box-shadow: 1px 2px 10px #999;
-}
-
-.entrant-page .why-we .our-think:hover i.icons{
-	color: #fff;
-}
-
-/* ===== DIRECTIONS ===== */
-
-.entrant-page .directions-tabs{
-	width: 100%;
-	padding: 10px 0px;
-	margin-bottom: 50px;
-}
-
-.entrant-page .nav-tabs{
-	border: none;
-}
-
-.entrant-page .tabs-li{
-	width: 25%;
-	text-align: center;
-}
-
-.entrant-page .tabs-li a{
-	width: 100%;
-	display: inline-block;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	background-color: #2c3c4e;
-	padding: 10px;
-	border-bottom: none;
+.entrant-page #specialties .specialty{
 	margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 1px 2px 6px #999;
+    padding: 20px;
 }
 
-.entrant-page .tabs-li a.active{
-	background-color: #59b263;
-	box-shadow: 0px 0px 4px #333;
+.entrant-page hr{
+	width: 20%;
+	margin-left: 0;
 }
 
-.entrant-page .tab-content{
-	border: 1px solid #333;
-	padding: 20px 10px;
-	background-color: #2c3c4e;
-	color: #fff;
+.specialty-more{
+	text-align: right;
+	margin: 0;
 }
 
-.entrant-page .tabs-menu{
-	text-align: center;
-}
-
-.entrant-page .tabs-menu hr{
-	height: 1px;
-	background-color: #fff;
-}
-
-/* ===== NO DETERMINE ===== */
-.entrant-page .no-determine{
-	text-align: center;
-	margin-bottom: 50px;
-}
 
 /* ===== LOCATION ===== */
-
 .entrant-page .location{
 	margin-bottom: 50px;
 }
 
-/* ===== CONNECTION US ===== */
+/* ================================= SPECIALTY PAGE ================================= */
 
-.entrant-page .connection-us{
-	text-align: center;
-	margin-bottom: 50px;
+.specialty-page{
+	width: 100%;
+	height: auto;
+	padding: 160px 0pc 40px;
 }
 
-
-/* ================================= STUDENT'S PAGE ====================== */
+/* ================================= STUDENT'S PAGE ================================= */
 
 .students-page{
 	width: 100%;
@@ -1027,13 +981,13 @@ select.form-control:focus{
 .news-archive .news-archive-navbar, 
 .gallery-page .gallery-navbar,
 .about-us .about-us-navbar,
+.entrant-page .entrant-navbar,
 .admission-page .admission-navbar,
 .ist-department .ist-department-navbar,
 .ekm-department .ekm-department-navbar,
 .foa-department .foa-department-navbar{
 	width: 100%;
 	height: auto;
-	/*border: 2px solid #2c3c4e;*/
 	box-shadow: 1px 1px 4px #999;
 	background-color: #fff;
 }
@@ -1041,6 +995,7 @@ select.form-control:focus{
 .news-archive .news-archive-navbar ul,
 .gallery-page .gallery-navbar ul,
 .about-us .about-us-navbar ul,
+.entrant-page .entrant-navbar ul,
 .admission-page .admission-navbar ul,
 .ist-department .ist-department-navbar ul,
 .ekm-department .ekm-department-navbar ul,
@@ -1057,6 +1012,7 @@ select.form-control:focus{
 .news-archive .news-archive-navbar ul li:hover, 
 .gallery-page .gallery-navbar ul li:hover,
 .about-us .about-us-navbar ul li:hover,
+.entrant-page .entrant-navbar ul li:hover,
 .admission-page .admission-navbar ul li:hover,
 .ist-department .ist-department-navbar ul li:hover,
 .ekm-department .ekm-department-navbar ul li:hover,
@@ -1068,6 +1024,7 @@ select.form-control:focus{
 .news-archive .news-archive-navbar ul li:hover a, 
 .gallery-page .gallery-navbar ul li:hover a,
 .about-us .about-us-navbar ul li:hover a,
+.entrant-page .entrant-navbar ul li:hover a,
 .admission-page .admission-navbar ul li:hover a,
 .ist-department .ist-department-navbar ul li:hover a,
 .ekm-department .ekm-department-navbar ul li:hover a,
@@ -1075,6 +1032,7 @@ select.form-control:focus{
 	color: #fff;
 }
 
+.entrant-page .entrant-navbar ul li,
 .admission-page .admission-navbar ul li,
 .ist-department .ist-department-navbar ul li,
 .ekm-department .ekm-department-navbar ul li,
@@ -1086,6 +1044,7 @@ select.form-control:focus{
 .news-archive .news-archive-navbar ul li a, 
 .gallery-page .gallery-navbar ul li a, 
 .about-us .about-us-navbar ul li a,
+.entrant-page .entrant-navbar ul li a,
 .admission-page .admission-navbar ul li a,
 .ist-department .ist-department-navbar ul li a,
 .ekm-department .ekm-department-navbar ul li a,
@@ -1099,6 +1058,7 @@ select.form-control:focus{
 .news-archive .news-archive-navbar ul li a.active, 
 .gallery-page .gallery-navbar ul li a.active, 
 .about-us .about-us-navbar ul li a.active,
+.entrant-page .entrant-navbar ul li a.active,
 .admission-page .admission-navbar ul li a.active,
 .ist-department .ist-department-navbar ul li a.active,
 .ekm-department .ekm-department-navbar ul li a.active,
