@@ -189,7 +189,7 @@ h5{
 	background-size: 100% auto;
     background-attachment: fixed;
     background-size: cover;
-	padding-top: 200px; 
+	padding-top: 300px; 
 	text-align: center;
 	overflow: hidden;
 	position: relative;
@@ -428,8 +428,9 @@ h5{
 
 .contacts-info{
 	width: 50%;
+	padding: 0 5%;
+	text-align: right;
 	display: table-cell;
-	text-align: center;
 	vertical-align: middle;
 }
 
@@ -446,3 +447,8 @@ h5{
 	padding-bottom: 20px;
 	margin-bottom: 0;
 }
+
+.csi-contacts a img{
+	width: 20px;
+}
+
