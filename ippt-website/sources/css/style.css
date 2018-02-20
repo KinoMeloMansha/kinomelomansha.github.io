@@ -291,11 +291,19 @@ i.large{
 }
 
 .header .nav-contacts a{
-	color: #333;
+	width: 25px;
+	height: 25px;
+	color: #fff;
+	background-color: #59b263;
+	border: 1px solid #59b263;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: 10px;
 }
 
 .header .nav-contacts a:hover{
 	color: #59b263;
+	background-color: #fff;
 }
 
 .header .nav-contacts img{
@@ -645,26 +653,11 @@ section.main-page{
 	text-align: center;
 }
 
-/*======== SPORT LIFE ======== */
-.sport-life{
-	width: 100%;
-	height: auto;
-	padding: 40px 0;
-}
-
-.sport-life .sport-life-img{
-	margin-bottom: 20px;
-}
-
-.more-sport-life-img{
-	text-align: center;
-}
-
 /* ======== DIPLOMA ======== */
 .main-page .diploma{
 	width: 100%;
 	height: auto;
-	background-color: #e7ad30;
+	background-color: #fff;
 	padding: 40px 0;
 }
 
@@ -765,7 +758,7 @@ section.main-page{
 
 /*======== BANERS ========*/
 .main-page .baners{
-	background-color: #bdbdbd;
+	background-color: #cbcbcb;
 	padding: 20px 0px;
 }
 
@@ -808,6 +801,18 @@ section.main-page{
 .specialty-more{
 	text-align: right;
 	margin: 0;
+}
+
+.card{
+	margin-bottom: 10px;
+}
+
+.card-header h3{
+	margin-bottom: 0;
+}
+
+.card-header h3:hover{
+	cursor: pointer;
 }
 
 
