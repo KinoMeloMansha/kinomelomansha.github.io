@@ -297,7 +297,6 @@ i.large{
 	background-color: #59b263;
 	border: 1px solid #59b263;
 	text-align: center;
-	border-radius: 5px;
 	margin-left: 10px;
 }
 
@@ -764,7 +763,7 @@ section.main-page{
 
 .main-page .baners .baner{
 	display: inline-block;
-	height: 60px;
+	height: 76px;
 	margin-left: 4.4%;
 }
 
