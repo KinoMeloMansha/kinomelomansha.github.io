@@ -88,6 +88,10 @@ h5{
 	text-align: center;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 /* ========== IMG ========== */
 .img{
 	width: 100%;
@@ -146,6 +150,7 @@ h5{
 /* ========== Header ========== */
 .navbar{
 	padding-bottom: 0;
+	padding-top: 0;
 	box-shadow: 0px 0px 10px 0px #333;
 }
 
@@ -183,7 +188,7 @@ h5{
  .bg-csi-img{
  	width: 100%;
 	min-height: 100%;
-	background-image: url(../img/student-college/stud-col-all.jpg);
+	background-image: url(../sources/img/student-college/stud-col-all.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -233,8 +238,8 @@ h5{
 	width: 50px;
 	height: 50px;
 	display: block;
-	border-top: 5px solid #2c3c4e;
-	border-right: 5px solid #2c3c4e;
+	border-top: 15px solid #2c3c4e;
+	border-right: 15px solid #2c3c4e;
 	border-top-right-radius: 5px;
 	position: absolute;
 	bottom: 25px;
@@ -322,8 +327,8 @@ h5{
 
 .csi-member-name{
 	position: absolute;
-	width: 110%;
-	left: -5%;
+	width: 100%;
+	left: 0;
 	bottom: 0;
 	z-index: 5;
 	padding: 5px 10px;
@@ -452,3 +457,74 @@ h5{
 	width: 20px;
 }
 
+@keyframes logo-effect {
+  from {
+    background-image: url(../img/logo.png);
+  }
+
+  to {
+    background-image: url(../img/nulp-logo.png);
+  }
+}
+
+
+@keyframes csi-hidden-animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes csi-visible-animation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes scroll-down-blink {
+  from {
+    opacity: .5;
+    width: 50px;
+    height: 50px;
+  }
+
+  to {
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+  }
+}

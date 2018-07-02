@@ -5,18 +5,21 @@
 	<title>IPPT - Entrant's page</title>
 
 	<!-- Normalize css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="sources/css/normalize.min.css">
 
 	<!-- Bootstrap styles -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="sources/css/bootstrap.min.css" crossorigin="anonymous">
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="sources/font-awesome/css/font-awesome.min.css">
 
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+
 	<!-- My styles -->
-	<link rel="stylesheet" href="sources/css/style.css">
-	<link rel="stylesheet" href="sources/css/animate.css">
-	<link rel="stylesheet" href="sources/css/responsive.css">
+	<link rel="stylesheet" href="sources/css/style.min.css">
+	<!-- <link rel="stylesheet" href="sources/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="sources/css/responsive.min.css"> -->
 </head>
 <body class="entrant-height">
 	<!-- Preloader -->
@@ -107,9 +110,19 @@
 						<div class="entrant-navbar">
 							<ul class="nav nav-tabs entrant-tabs" role="tablist">
 								<li role="presentation"><a class="post-text active" href="#entrant-main"  aria-controls="entrant-main" role="tab" data-toggle="tab">Загальна інформація</a></li>
+
 								<li role="presentation"><a class="post-text" href="#specialties"  aria-controls="specialties" role="tab" data-toggle="tab">Спеціальності</a></li>
+
 								<li role="presentation"><a class="post-text" href="#conditions-of-entr"  aria-controls="conditions-of-entr" role="tab" data-toggle="tab">Умови вступу</a></li>
+
+								<li role="presentation"><a class="post-text" href="#license"  aria-controls="license" role="tab" data-toggle="tab">Ліцензія на надання освітніх послуг</a></li>
+
+								<li role="presentation"><a class="post-text" href="#cost-of-education" aria-controls="cost-of-education" role="tab" data-toggle="tab">Вартість навчання</a></li>
+
+								<li role="presentation"><a class="post-text" href="#selection-committee"  aria-controls="selection-committee" role="tab" data-toggle="tab">Розклад роботи Приймальної (відбіркової) комісії</a></li>
+
 								<li role="presentation"><a class="post-text" href="#preparing-for-introduction"  aria-controls="preparing-for-introduction" role="tab" data-toggle="tab">Підготовка до вступу</a></li>
+
 								<li role="presentation"><a class="post-text" href="#faq"  aria-controls="faq" role="tab" data-toggle="tab">Запитання/Відповіді</a></li>
 							</ul>
 						</div>
@@ -134,23 +147,108 @@
 
 							<div role="tabpanel" class="tab-pane fade in" id="specialties">
 								<h2>Спеціальності</h2>
-								<div class="specialty">
-									<h3 class="text-blue">Маркетинг</h3>
-									<hr>
-									<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laudantium et veritatis perferendis ex officia accusamus sed accusantium ratione adipisci porro error voluptatum explicabo delectus possimus, sint perspiciatis ut quibusdam.</p>
-									<p class="specialty-more"><a href="specialty.html" target="_blank" class="text-bold text-italic text-aqua">Детальніше</a></p>
-								</div>
+								<h3>Перелік освітніх ступенів та спеціальностей, за якими оголошується прийом на навчання у 2018 році, конкурсні предмети, вступні іспити</h3>
+
+								<table class="table table-bordered table-hover"> <!--  table-responsive -->
+									<thead class="thead-aqua">
+									    <tr>
+									      <th scope="col">Спеціальність</th>
+									      <th scope="col">Спеціалізація <br> (освітня програма)</th>
+									      <th scope="col">Конкурсні предмети <br> (вступні іспити)</th>
+									    </tr>
+									</thead>
+									<tbody>
+									  	<tr>
+									  		<th scope="row" colspan="3">Бакалавр</th>
+									  	</tr>
+									    <tr>
+									      <td scope="row">Комп’ютерні науки</td>
+									      <td>Комп’ютерні науки</td>
+									      <td>Українська мова та література, математика, <br> фізика (або історія України), іноземна мова</td>
+									    </tr>
+									    <tr>
+									      <td scope="row">Фінанси, банківська справа та страхування</td>
+									      <td>Фінанси, банківська справа та страхування</td>
+									      <td>Українська мова та література, математика, <br> географія (або фізика), іноземна мова</td>
+									    </tr>
+									    <tr>
+									      <td scope="row">Маркетинг</td>
+									      <td>Маркетинг</td>
+									      <td>Українська мова та література, математика, <br> географія (або фізика), іноземна мова</td>
+									    </tr>
+									      <td scope="row">Облік і оподаткування</td>
+									      <td>Облік і оподаткування</td>
+									      <td>Українська мова та література, математика, <br> географія (або фізика), іноземна мова</td>
+									    </tr>
+
+									  	<tr>
+									  		<th scope="row" colspan="3">Магістр</th>
+									  	</tr>
+									    </tr>
+									      <td scope="row">Комп’ютерні науки</td>
+									      <td>Комп'ютерний еколого-економічний моніторинг</td>
+									      <td>Фаховий іспит; іноземна мова</td>
+									    </tr>
+
+									  	<tr>
+									  		<th scope="row" colspan="3">Молодший спеціаліст</th>
+									  	</tr>
+									    </tr>
+									      <td scope="row">Комп’ютерні науки</td>
+									      <td>Комп’ютерні науки</td>
+									      <td>Українська мова, математика</td>
+									    </tr>
+									    </tr>
+									      <td scope="row">Фінанси, банківська справа та страхування</td>
+									      <td>Фінанси, банківська справа та страхування</td>
+									      <td>Українська мова, математика</td>
+									    </tr>
+									    </tr>
+									      <td scope="row">Маркетинг</td>
+									      <td>Маркетинг</td>
+									      <td>Українська мова, математика</td>
+									    </tr>
+									    </tr>
+									      <td scope="row">Облік і оподаткування</td>
+									      <td>Облік і оподаткування</td>
+									      <td>Українська мова, математика</td>
+									    </tr>
+									</tbody>
+								</table>
+
+								<p><span class="text-bold">Обов'язкова</span> наявність <span class="text-bold">сертифікатів</span>. Програми вступних випробувань із загальноосвітніх предметів відповідають програмам середніх загальноосвітніх навчальних закладів.</p>
 							</div>
 
 							<div role="tabpanel" class="tab-pane fade in"  id="conditions-of-entr">
 								<h2>Умови вступу</h2>
 								<ul>
 									<li><a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-aqua">Правила прийому в 2018 році (бакалавр та магістр)</a></li>
-									<li><a target="_blank" href="http://www.lp.edu.ua/vstup-u-koledzhi" class="text-aqua">Правила прийому в 2018 році (молодший спеціаліст)</a></li>
+									<li>
+										<a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/pravyla-pryyomu" class="text-aqua">Правила прийому в 2018 році (молодший спеціаліст)</a>
+										<ul>
+											<li><a target="_blank" href="sources/pdf/programa_z_ukr_mova_na_osnovi_9_klasu_2018.pdf" class="text-aqua">Програма вступного випробування з української мови</a></li>
+											<li><a target="_blank" href="sources/pdf/programa_z_matematiki_na_osnovi_9_klasu__2018.pdf" class="text-aqua">Програма вступного випробування з математики</a></li>
+										</ul>
+									</li>
 									<li><a target="_blank" href="http://lp.edu.ua/magistry" class="text-aqua">Умови вступу для магістрів</a></li>
 									<li><a target="_blank" href="http://lp.edu.ua/bakalavram" class="text-aqua">Умови вступу для бакалаврів</a></li>
-									<li><a target="_blank" href="http://www.lp.edu.ua/vstup-u-koledzhi" class="text-aqua">Умови вступу для молодших спеціалістів</a></li>
+									<li><a target="_blank" href="http://lp.edu.ua/sites/default/files/attach/2016/172/pravyla_mc_ippt18222.pdf" class="text-aqua">Умови вступу для молодших спеціалістів</a></li>
 								</ul>
+
+								<p class="text-bold">Додатки до Правил прийому:</p>
+								<p>ОС «Бакалавр», «Магістр»</p>
+								<ul>
+									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_1_ippt.pdf" class="text-aqua">Додаток 1. (ІППТ) Перелік освітніх ступенів та спеціальностей, за якими оголошується прийом на навчання, ліцензовані обсяги, терміни</a></li>
+									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_3_ippt.pdf" class="text-aqua">Додаток 3. (ІППТ) Перелік спеціальностей та вступних випробувань для прийому на навчання осіб, які здобули ОКР молодший  спеціаліст</a></li>
+									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_4_ippt.pdf" class="text-aqua">Додаток 4. (ІППТ) Перелік спеціальностей, вступних випробувань для прийому на навчання для здобуття освітнього ступеню магістра</a></li>
+									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_5_ippt_2018.pdf" class="text-aqua">Додаток 5. (ІППТ) Перелік конкурсних предметів у сертифікаті Українського центру оцінювання якості освіти</a></li>
+								</ul>
+								<p>ОКР «Молодший спеціаліст»</p>
+								<ul>
+									<li><a target="_blank" href="sources/pdf/Dodatok_1_MC_IPPT_26-06-18.pdf" class="text-aqua">Додаток 1. (ІППТ) Перелік освітніх ступенів та спеціальностей, за якими оголошується прийом на навчання, ліцензовані обсяги, терміни</a></li>
+									<li><a target="_blank" href="http://www.lp.edu.ua/sites/default/files/attach/2016/172/dodatok_5_ippt_2018.pdf" class="text-aqua">Додаток 5. (ІППТ) Перелік конкурсних предметів </a></li>
+								</ul>							
+
 								<p class="text-bold">Для подачі заяви необхідно мати:</p>
 								<ul>
 								    <li class="text-italic">копію документа державного зразка про раніше здобутий освітній (освітньо-кваліфікаційний) рівень, на основі якого здійснюється вступ, і додаток до нього;</li>
@@ -159,100 +257,71 @@
 								    <li class="text-italic">копію довідки ДПА про присвоєння ідентифікаційного номера;</li>
 								    <li class="text-italic">чотири кольорові фотокартки розміром 3х4 см.</li>
 								</ul>
-								<p class="text-bold">Додатки до правил прийому (балаврів та магістрів):</p>
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade in"  id="license">
+								<h2>Ліцензія на надання освітніх послуг</h2>
+								<p>У приєднаних файлах:</p>
 								<ul>
-									<li>Додаток 1</li>
-									<li>Додаток 2</li>
+									<li><a target="_blank" href="http://lp.edu.ua/pryymalna-komisiya/licenziya-na-nadannya-osvitnih-poslug" class="text-aqua">Відомості про здійснення освітньої діяльності у сфері вищої освіти. <br> Національний університет «Львівська політехніка».</a></li>
+									<li><a target="_blank" href="sources/pdf/Витяг Ліцензія на надання освітніх послуг ІППТ.pdf" class="text-aqua">Витяг з Ліцензії на надання освітніх послуг. <br> Інститут підприємництва та перспективних технологій Національного університету «Львівська політехніка».</a></li>
 								</ul>
-								<p class="text-bold">Додатки до правил прийому (молодших спеціалістів):</p>
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade in"  id="cost-of-education">
+								<h2>Вартість навчання</h2>
 								<ul>
-									<li>Додаток 1</li>
-									<li>Додаток 2</li>
+									<li><a target="_blank" href="ВАРТІСТЬ НАВЧАННЯ_МС_2018_26-06-18.pdf" class="text-aqua">Вартість підготовки фахівців ОКР «Молодший спеціаліст» для студентів, зарахованих на навчання в 2018 році.</a></li>
+									<li><a target="_blank" href="ІППТ_Бакалаври_магістри_денна_2018_26-06-18.pdf" class="text-aqua">Вартість підготовки фахівців ОС «Бакалавр», «Магістр» для студентів, зарахованих на навчання в 2018 році (Денна форма навчання).</a></li>
+									<li><a target="_blank" href="ІППТ_Бакалаври_магістри_заочна_2018_26-06-18.pdf" class="text-aqua">Вартість підготовки фахівців ОС «Бакалавр», «Магістр» для студентів, зарахованих на навчання в 2018 році (Заочна форма навчання).</a></li>
 								</ul>
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade in"  id="selection-committee">
+								<h2>Розклад роботи Приймальної (відбіркової) комісії</h2>
+								<table class="table table-bordered table-hover"> <!--  table-responsive -->
+									<thead class="thead-aqua">
+									    <tr>
+									      <th scope="col">ТЕРМІН</th>
+									      <th scope="col">ДНІ ТИЖНЯ</th>
+									      <th scope="col">ГОДИНИ</th>
+									    </tr>
+									</thead>
+									<tbody>
+									    <tr>
+									      <td scope="row">02 липня – 10 серпня <br> 2018 року</td>
+									      <td>Понеділок – п’ятниця <br> Субота <br> Неділя</td>
+									      <td>900 - 1300; 1400 - 1800 <br> 900 - 1300 <br> Вихідний</td>
+									    </tr>
+									    <tr>
+									      <td scope="row">11 серпня – 31 серпня <br> 2018 року</td>
+									      <td>Понеділок – п’ятниця <br> Субота <br> Неділя</td>
+									      <td>900 - 1300; 1400 - 1700 <br> Вихідний <br> Вихідний</td>
+									    </tr>
+									</tbody>
+								</table>
 							</div>
 
 							<div role="tabpanel" class="tab-pane fade in"  id="preparing-for-introduction">
 								<h2>Підготовка до вступу</h2>
+								<p>Зразки тестових завдань для вступу на ОКР «Молодший спеціаліст»:</p>
+								<ul>
+									<li><a target="_blank" href="sources/pdf/variant_1.pdf" class="text-aqua">Варіант 1</a></li>
+									<li><a target="_blank" href="sources/pdf/variant_2.pdf" class="text-aqua">Варіант 2</a></li>
+								</ul>
 							</div>
 
 							<div role="tabpanel" class="tab-pane fade in"  id="faq">
 								<h2>Запитання/Відповіді</h2>
-								<div id="accordion">
-								  <div class="card">
-								    <div class="card-header" id="headingOne">
-								        <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								          Question 1?
-								        </h3>
-								    </div>
-
-								    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-								      <div class="card-body">
-								        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								      </div>
-								    </div>
-								  </div>
-
-								  <div class="card">
-								    <div class="card-header" id="headingTwo">
-								        <h3 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								          Question 2?
-								        </h3>
-								    </div>
-
-								    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-								      <div class="card-body">
-								        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								      </div>
-								    </div>
-								  </div>
-
-								  <div class="card">
-								    <div class="card-header" id="headingThree">
-								        <h3 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								          Question 3?
-								        </h3>
-								    </div>
-
-								    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-								      <div class="card-body">
-								        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								      </div>
-								    </div>
-								  </div>
-								</div>
-								<!-- <div class="question-answer">
-									<h3 class="text-blue">Question first?</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, atque, temporibus! Laudantium tempore hic facilis quae ipsam, rerum libero fugiat quidem placeat, odit, dolores cum dolor beatae. Officia, facere, consequuntur.</p>
-								</div>
-								<div class="question-answer">
-									<h3 class="text-blue">Question second?</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, atque, temporibus! Laudantium tempore hic facilis quae ipsam, rerum libero fugiat quidem placeat, odit, dolores cum dolor beatae. Officia, facere, consequuntur.</p>
-								</div>
-								<div class="question-answer">
-									<h3 class="text-blue">Question third?</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, atque, temporibus! Laudantium tempore hic facilis quae ipsam, rerum libero fugiat quidem placeat, odit, dolores cum dolor beatae. Officia, facere, consequuntur.</p>
-								</div> -->
+								<p><a target="_blank" href="https://mon.gov.ua/ua/osvita/visha-osvita/vstupna-kampaniya-2018/poshirenni-zapitannya-vidpovidi-pro-vstup-2018" class="text-aqua">Поширені запитання – відповіді про вступ 2018</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-
-			<!-- LOCATION -->
-			<!-- <div id="location" class="location">
-				<h2 class="text-center">Як нас знайти?</h2>
-				<div class="row no-gutters">
-					<div class="col-12">
-						<iframe src="https://www.google.com/maps/d/embed?mid=1q1EhFyAKrJLBUxdvwadky6_brPM" width="100%" height="280"></iframe>
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</section>
-
+	
 	<!-- Footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
@@ -266,9 +335,9 @@
 				</div>
 				<div class="col-5">
 					<div class="contact-us text-white">
-						<p>Адреса: 9044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
-						<p>Тел: (032) 258-20-27б, (032) 297-07-55 </p>
-						<p>E-mail: IPPT.dept@lpnu.ua</p>
+						<p>Адреса: 79044, м. Львів, вул. Горбачевського, 18, 32-й н.к. </p>
+						<p>Тел: (+38032) 297-07-55, (+38032) 258-20-27б</p>
+						<p>E-mail: IPPT.dept@lpnu.ua, dir.ippt@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-5">
@@ -285,13 +354,16 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="sources/js/jquery.min.js"></script>
 
 	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="sources/js/popper.min.js" crossorigin="anonymous"></script>
+	<script src="sources/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<!-- Fancybox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
 	<!-- My scripts -->
-	<script src="sources/js/script.js"></script>
+	<script src="sources/js/script.min.js"></script>
 </body>
 </html>

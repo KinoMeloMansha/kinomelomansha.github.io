@@ -3,7 +3,6 @@ html, body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	/*background-color: #F9F9F9;*/
 }
 
 html{
@@ -20,11 +19,12 @@ h1{
 	margin: 0;
 	position: relative;
 	z-index: 10;
+	text-align: left;
+	padding-left: 50px;
 }
 
 h2{
 	font-size: 26pt;
-	/*text-align: center;*/
 	margin-bottom: 20px;
 }
 
@@ -93,7 +93,6 @@ hr{
 }
 
 .btn:hover{
-	/*background-color: #fff;*/
 	background-color: #F9F9F9;
 	cursor: pointer;
 }
@@ -243,7 +242,7 @@ section{
 .bg-img-ist{
 	width: 100%;
 	min-height: 80%;
-	background-image: url(../img/news/IMG_183222222.jpg); /* ../img/department/ist/dep_ist.jpg */
+	background-image: url(../../sources/img/news/IMG_183222222.jpg); /* ../img/department/ist/dep_ist.jpg */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -321,18 +320,13 @@ section{
 }
 
 .about-department-info{
-	/*border: 3px solid #59b263;*/
-	/*box-shadow: 1px 1px 2px #333;*/
 	padding: 20px;
-	/*background-color: rgba(225, 225, 225, .8);*/
 	background-color: #2c3c4e;
 }
 
 .subdivisions{
 	width: 100%;
 	height: auto;
-	/*background-color: #fff;*/
-	/*padding: 50px 0;*/
 	padding: 0 0 30px;
 	position: relative;
 	z-index: 10;
@@ -375,7 +369,7 @@ section{
 	height: auto;
 	padding: 80px 0 140px;
 	position: relative;
-	background-image: url(../img/news/IMG_4752.jpg);
+	background-image: url(../../sources/img/news/IMG_4752.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -440,7 +434,6 @@ canvas{
 	width: 100%;
 	height: auto;
 	background-color: #fff;
-	/*padding: 0 0 30px;*/
 	padding: 80px 0 30px;
 	position: relative;
 }
@@ -469,18 +462,12 @@ canvas{
 	margin-bottom: 20px;
 }
 
-/*.teacher hr{
-	width: 10%;
-	height: 1px;
-	background-color: #2c3c4e;
-}*/
-
 .science{
 	width: 100%;
 	height: auto;
 	padding: 80px 0 140px;
 	position: relative;
-	background-image: url(../img/news/IMG_4731.jpg);
+	background-image: url(../../sources/img/news/IMG_4731.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -519,7 +506,6 @@ canvas{
 	width: 100%;
 	height: auto;
 	background-color: #fff;
-	/*padding: 0 0 30px;*/
 	padding: 80px 0 50px;
 	position: relative;
 }
@@ -609,41 +595,34 @@ canvas{
 	color: #fff;
 }
 
-.footer .copyright{
-	/*padding: 20px 0px 0px;*/
-}
 
-
-
-
-/* ============ TEACHERS IST */
-.teacher-ist{
+/* ============ TEACHERS IST, PROJECTS IST ======= */
+.teacher-ist, .ist-projects{
 	width: 100%;
 	height: auto;
 	padding: 90px 0 40px;
 }
 
-.teachers-bar{
+.teachers-bar, .projects-bar{
 	width: 100%;
 	height: auto;
-	/*border: 2px solid #2c3c4e;*/
 	box-shadow: 1px 1px 4px #999;
 	background-color: #fff;
 }
 
-.teachers-bar ul{
+.teachers-bar ul, .projects-bar ul{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 	display: block;
 }
 
-.teachers-bar ul li:hover a{
+.teachers-bar ul li:hover a, .projects-bar ul li:hover a{
 	color: #59b263;
 	cursor: pointer;
 }
 
-.teachers-bar ul li a{
+.teachers-bar ul li a, .projects-bar ul li a{
 	width: 100%;
 	display: inline-block;
 	color: #333;
@@ -651,32 +630,24 @@ canvas{
 	padding: 10px 20px;
 }
 
-.teachers-bar ul li a.active{
+.teachers-bar ul li a.active, .projects-bar ul li a.active{
 	color: #fff;
 	font-weight: bold;
 	background-color: #2c3c4e;
 }
 
-.teachers-info{
+.teachers-info, .projects-info{
 	width: 100%;
 	height: auto;
 	background-color: #fff;
 }
 
-.teachers-info .img{
+.teachers-info .img, .projects-info .img{
 	width: 30%;
 	margin: 0 0 20px 20px;
 	box-shadow: 1px 1px 4px #999;
 }
 
-.teachers-info .img img{
+.teachers-info .img img, .projects-info .img img{
 	width: 100%;
 }
-
-/*.img{
-	width: 100%;
-}
-
-.img img{
-	width: 100%;
-}*/
