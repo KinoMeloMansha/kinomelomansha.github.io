@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$("#about-department").jParticle({
 		background: "#fff",
-		color: "#0082ba",
+		color: "#61afd3",
 		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 	$('#teachers').jParticle({
 		background: "#fff",
-		color: "#0082ba",
+		color: "#61afd3",
 		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	$('#ekm-stud-proj').jParticle({
 		background: "#fff",
-		color: "#0082ba",
+		color: "#61afd3",
 		particlesNumber: 50,
 		createLinkDist: 100,
 		disableLinks: false,

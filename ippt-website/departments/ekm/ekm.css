@@ -39,7 +39,7 @@ h4{
 h5{
 	font-size: 12pt;
 	font-style: italic;
-	color: #0082ba;
+	color: #61afd3;
 }
 
 p{
@@ -69,7 +69,7 @@ hr{
 }
 
 .text-aqua{
-	color: #0082ba;
+	color: #61afd3;
 }
 
 .text-center{
@@ -98,13 +98,13 @@ hr{
 }
 
 .btn-aqua{
-	background-color: #0082ba;
-	border-color: #0082ba;
+	background-color: #61afd3;
+	border-color: #61afd3;
 	color: #fff !important;
 }
 
 .btn-aqua:hover{
-	color: #0082ba !important;
+	color: #61afd3 !important;
 }
 
 .btn-blue{
@@ -124,7 +124,7 @@ hr{
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 130, 186, .8);
+	background-color: rgba(97, 175, 211, .8);
 }
 
 .blue-bg{
@@ -148,7 +148,7 @@ hr{
 }
 
 .transfotrm-diagonal-aqua{
-	background-color: rgba(0, 130, 186, .8);
+	background-color: rgba(97, 175, 211, .8);
 	width: 60%;
 	position: absolute;
 	z-index: 0;
@@ -160,7 +160,7 @@ hr{
 	content: '';
 	position: absolute;
 	border-right: 300px solid transparent;
-	border-top: calc(100vw - 100px) solid rgba(0, 130, 186, .8);
+	border-top: calc(100vw - 100px) solid rgba(97, 175, 211, .8);
     left: 100%;
     top: 0;
 }
@@ -214,12 +214,12 @@ hr{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #0082ba;
+	color: #61afd3;
 }
 
 .navbar-light .navbar-nav .nav-link:focus{
-	color: #0082ba;
-	border-color: #0082ba;
+	color: #61afd3;
+	border-color: #61afd3;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -227,8 +227,8 @@ hr{
  .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .show>.nav-link{
 	font-weight: bold;
-	color: #0082ba;
-	border-color: #0082ba;
+	color: #61afd3;
+	border-color: #61afd3;
 }
 
 /* ===== MAIN PAGE ===== */
@@ -513,7 +513,7 @@ canvas{
 	width: 100%;
 	height: auto;
 	padding: 80px 0 80px;
-	background-color: #0082ba;
+	background-color: #61afd3;
 	position: relative;
 }
 
@@ -596,7 +596,7 @@ canvas{
 }
 
 .teachers-bar ul li:hover a, .projects-bar ul li:hover a{
-	color: #0082ba;
+	color: #61afd3;
 	cursor: pointer;
 }
 
