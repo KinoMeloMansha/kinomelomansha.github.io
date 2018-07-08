@@ -393,8 +393,14 @@ section{
 	z-index: 1;
 }
 
+.education-part{
+	min-height: 100%;
+	background-color: #fff;
+	position: relative;
+}
+
 .education-part-title{
-	width: 100%;
+	width: 100.25%;
 	height: 75px;
 	padding: 10px;
 	background-color: #2c3c4e;
@@ -411,6 +417,17 @@ section{
 	height: auto;
 	padding: 10px;
 	background-color: #fff;
+}
+
+.education-part-content > p{
+	margin-bottom: 30px;
+}
+
+.education-part-content > a{
+	position: absolute;
+	left: 50%;
+	margin-left: -52.815px;
+	bottom: 10px;
 }
 
 canvas{
@@ -649,4 +666,13 @@ canvas{
 
 .teachers-info .img img, .projects-info .img img{
 	width: 100%;
+}
+
+@media(max-width: 992px){
+	.practice-bases:before, 
+	.partners:before,
+	.foa-stud-proj:before,
+	.science:before,
+	.teachers:before,
+	.education:before{display: none;}
 }
