@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$("#about-department").jParticle({
 		background: "#fff",
-		color: "#787ab3",
+		color: "#2E3092",
 		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 	$('#teachers').jParticle({
 		background: "#fff",
-		color: "#787ab3",
+		color: "#2E3092",
 		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	$('#ist-stud-proj').jParticle({
 		background: "#fff",
-		color: "#787ab3",
+		color: "#2E3092",
 		particlesNumber: 50,
 		createLinkDist: 100,
 		disableLinks: false,
