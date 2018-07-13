@@ -24,31 +24,28 @@ $(document).ready(function(){
 
 	$("#about-department").jParticle({
 		background: "#fff",
-		color: "#59b263",
-		particlesNumber: 100, //50
+		color: "#A6CE39",
+		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
-		// disableMouse: true,
 		speed: 60
 	});
 
 	$('#teachers').jParticle({
 		background: "#fff",
-		color: "#59b263",
+		color: "#A6CE39",
 		particlesNumber: 100,
 		createLinkDist: 150,
 		disableLinks: false,
-		// disableMouse: true,
 		speed: 60
 	});
 
 	$('#ist-stud-proj').jParticle({
 		background: "#fff",
-		color: "#59b263",
+		color: "#A6CE39",
 		particlesNumber: 50,
 		createLinkDist: 100,
 		disableLinks: false,
-		// disableMouse: true,
 		speed: 60
 	});
 });

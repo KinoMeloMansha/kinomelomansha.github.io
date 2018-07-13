@@ -10,10 +10,6 @@ html{
 }
 
 /* ===== FONTS ===== */
-
-*{
-	color: #2c3c4e;
-}
 h1{
 	font-size: 36pt;
 	margin: 0;
@@ -39,7 +35,7 @@ h4{
 h5{
 	font-size: 12pt;
 	font-style: italic;
-	color: #787ab3;
+	color: #00A1E3;
 }
 
 p{
@@ -49,7 +45,7 @@ p{
 hr{
 	width: 10%;
 	height: 1px;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 }
 
 .publications hr{
@@ -60,16 +56,16 @@ hr{
 	color: white;
 }
 
-.text-blue{
-	color: #2c3c4e;
+.text-dark-blue{
+	color: #2E3092;
 }
 
-.text-blue a{
-	color: #2c3c4e;
+.text-dark-blue a{
+	color: #2E3092;
 }
 
-.text-violet{
-	color: #787ab3;
+.text-light-blue{
+	color: #00A1E3;
 }
 
 .text-center{
@@ -78,6 +74,10 @@ hr{
 
 .text-bold{
 	font-weight: bold;
+}
+
+.text-italic{
+	font-style: italic;
 }
 
 /* ===== BUTTONS ===== */
@@ -97,43 +97,43 @@ hr{
 	cursor: pointer;
 }
 
-.btn-violet{
-	background-color: #787ab3;
-	border-color: #787ab3;
+.btn-light-blue{
+	background-color: #00A1E3;
+	border-color: #00A1E3;
 	color: #fff !important;
 }
 
-.btn-violet:hover{
-	color: #787ab3 !important;
+.btn-light-blue:hover{
+	color: #00A1E3 !important;
 }
 
-.btn-blue{
-	background-color: #2c3c4e;
-	border-color: #2c3c4e;
+.btn-dark-blue{
+	background-color: #2E3092;
+	border-color: #2E3092;
 	color: #fff !important;
 }
 
-.btn-blue:hover{
-	color: #2c3c4e !important;
+.btn-dark-blue:hover{
+	color: #2E3092 !important;
 }
 
 /* ===== BACKGROUND DIVS ===== */
-.violet-bg{
+.light-blue-bg{
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(123, 122, 179, .8);
+	background-color: rgba(0, 61, 227, .8);
 }
 
-.blue-bg{
+.dark-blue-bg{
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(44, 60, 78, .8);
+	background-color: rgba(46, 48, 146, .8);
 }
 
 .blur-bg{
@@ -147,8 +147,8 @@ hr{
     filter: url('blur.svg#blur');
 }
 
-.transfotrm-diagonal-violet{
-	background-color: rgba(123, 122, 179, .8);
+.transfotrm-diagonal-light-blue{
+	background-color: rgba(0, 61, 227, .8);
 	width: 60%;
 	position: absolute;
 	z-index: 0;
@@ -156,17 +156,17 @@ hr{
 	bottom: 0;
 }
 
-.transfotrm-diagonal-violet:after{
+.transfotrm-diagonal-light-blue:after{
 	content: '';
 	position: absolute;
 	border-right: 300px solid transparent;
-	border-top: calc(100vw - 100px) solid rgba(123, 122, 179, .8);
+	border-top: calc(100vw - 100px) solid rgba(0, 61, 227, .8);
     left: 100%;
     top: 0;
 }
 
-.transfotrm-diagonal-blue{
-	background-color: rgba(44, 60, 78, .8);
+.transfotrm-diagonal-dark-blue{
+	background-color: rgba(46, 48, 146, .8);
 	width: 18%;
 	position: absolute;
 	z-index: 0;
@@ -174,11 +174,11 @@ hr{
 	top: 0;
 	bottom: 0;
 }
-.transfotrm-diagonal-blue:before{
+.transfotrm-diagonal-dark-blue:before{
 	content: '';
 	position: absolute;
 	border-left: 300px solid transparent;
-	border-bottom: calc(100vw - 100px) solid rgba(44, 60, 78, .8);
+	border-bottom: calc(100vw - 100px) solid rgba(46, 48, 146, .8);
     left: -300px;
     top: 0;
 }
@@ -191,7 +191,7 @@ hr{
 	bottom: 0;
 	left: 0;
 	z-index: 1050;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 	text-align: center;
 	line-height: calc(100vh);
 	vertical-align: middle;
@@ -208,18 +208,18 @@ hr{
 .navbar-light .navbar-nav .nav-link{
 	font-weight: bold;
 	font-size: 18px;
-	color: #2c3c4e;
+	color: #2E3092;
 	border-bottom: 2px solid #fff;
 	padding: 20px 10px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #787ab3;
+	color: #00A1E3;
 }
 
 .navbar-light .navbar-nav .nav-link:focus{
-	color: #787ab3;
-	border-color: #787ab3;
+	color: #00A1E3;
+	border-color: #00A1E3;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -227,8 +227,8 @@ hr{
  .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .show>.nav-link{
 	font-weight: bold;
-	color: #787ab3;
-	border-color: #787ab3;
+	color: #00A1E3;
+	border-color: #00A1E3;
 }
 
 /* ===== MAIN PAGE ===== */
@@ -271,7 +271,7 @@ section{
 .department-news-card{
 	width: 90%;
 	margin: auto;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 	padding: 10px;
 }
 
@@ -288,7 +288,7 @@ section{
 }
 
 .carousel-controls span i{
-	color: #2c3c4e;
+	color: #2E3092;
 	font-size: 36pt;
 	font-weight: 100;
 }
@@ -318,7 +318,7 @@ section{
 
 .about-department-info{
 	padding: 20px;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 }
 
 .education{
@@ -367,7 +367,7 @@ section{
 	width: 100%;
 	height: 75px;
 	padding: 10px;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 	display: table;
 }
 
@@ -459,6 +459,11 @@ canvas{
 	background-color: #fff;
 	padding: 20px;
 	margin-bottom: 20px;
+	text-align: center;
+}
+
+.science-card ul{
+	text-align: left;
 }
 
 .more-publications{
@@ -490,7 +495,7 @@ canvas{
 
 .proj-card{
 	margin-bottom: 20px;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 }
 
 .proj-img, .proj-info{
@@ -519,7 +524,7 @@ canvas{
 	width: 100%;
 	height: auto;
 	padding: 80px 0 80px;
-	background-color: #787ab3;
+	background-color: #00A1E3;
 	position: relative;
 }
 
@@ -535,7 +540,7 @@ canvas{
 
 .partner{
 	margin-bottom: 30px;
-	border-left: 5px solid #2c3c4e;
+	border-left: 5px solid #2E3092;
 	padding: 10px;
 }
 
@@ -558,13 +563,14 @@ canvas{
 
 .footer{
 	width: 100%;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 	padding: 20px 0;
 }
 
 .footer .copyright{
 	height: 100%;
 	display: table;
+	margin: auto;
 }
 
 .footer p{
@@ -602,7 +608,7 @@ canvas{
 }
 
 .teachers-bar ul li:hover a, .projects-bar ul li:hover a{
-	color: #787ab3;
+	color: #00A1E3;
 	cursor: pointer;
 }
 
@@ -617,7 +623,7 @@ canvas{
 .teachers-bar ul li a.active, .projects-bar ul li a.active{
 	color: #fff;
 	font-weight: bold;
-	background-color: #2c3c4e;
+	background-color: #2E3092;
 }
 
 .teachers-info, .projects-info{
