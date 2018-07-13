@@ -73,7 +73,7 @@ h5{
 }
 
 .text-aqua{
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .text-white-hover:hover{
@@ -116,14 +116,14 @@ a:hover{
 }
 
 .btn-aqua{
-	background-color: #59b263;
-	border-color: #59b263;
+	background-color: #A6CE39;
+	border-color: #A6CE39;
 	color: #fff !important;
 }
 
 .btn-aqua:hover{
 	background-color: #f9f9f9;
-	color: #59b263 !important;
+	color: #A6CE39 !important;
 }
 
 /* ===== PRELOADER ===== */
@@ -163,7 +163,7 @@ a:hover{
 }
 
 .navbar-light a.navbar-brand:hover{
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -172,16 +172,16 @@ a:hover{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #59b263
+	color: #A6CE39
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
  .navbar-light .navbar-nav .nav-link.active, 
  .navbar-light .navbar-nav .nav-link.show,
  .navbar-light .navbar-nav .show>.nav-link{
- 	color: #59b263;
+ 	color: #A6CE39;
  	font-weight: bold;
- 	border-bottom: 2px solid #59b263;
+ 	border-bottom: 2px solid #A6CE39;
  }
 
  /* ========== Bg-img ======= */
@@ -299,7 +299,7 @@ a:hover{
 	position: absolute;
 	font-size: 12pt;
 	font-weight: bold;
-	color: #59b263;
+	color: #A6CE39;
 	left: -15px;
 }
 
@@ -332,7 +332,7 @@ a:hover{
 	bottom: 0;
 	z-index: 5;
 	padding: 5px 10px;
-	background-color: #59b263;
+	background-color: #A6CE39;
 }
 
 .csi-member-info{
@@ -366,7 +366,7 @@ a:hover{
 	vertical-align: middle;
 	font-size: 32pt;
 	border-right: 2px solid #f9f9f9;
-	color: #59b263;
+	color: #A6CE39;
 }
 
 .activity-card .activity-info{
