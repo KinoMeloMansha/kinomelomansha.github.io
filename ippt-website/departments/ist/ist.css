@@ -46,7 +46,7 @@ p{
 hr{
 	width: 10%;
 	height: 1px;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 }
 
 .publications hr{
@@ -58,11 +58,11 @@ hr{
 }
 
 .text-dark-blue{
-	color: #2E3092;
+	color: #2C3C4E;
 }
 
 .text-dark-blue a{
-	color: #2E3092;
+	color: #2C3C4E;
 }
 
 .text-green{
@@ -109,13 +109,13 @@ hr{
 }
 
 .btn-dark-blue{
-	background-color: #2E3092;
-	border-color: #2E3092;
+	background-color: #2C3C4E;
+	border-color: #2C3C4E;
 	color: #fff !important;
 }
 
 .btn-dark-blue:hover{
-	color: #2E3092 !important;
+	color: #2C3C4E !important;
 }
 
 /* ===== BACKGROUND DIVS ===== */
@@ -134,7 +134,7 @@ hr{
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(46, 48, 146, .8);
+	background-color: rgba(46, 60, 78, .8);
 }
 
 .blur-bg{
@@ -167,7 +167,7 @@ hr{
 }
 
 .transfotrm-diagonal-dark-blue{
-	background-color: rgba(46, 48, 146, .8);
+	background-color: rgba(46, 60, 78, .8);
 	width: 18%;
 	position: absolute;
 	z-index: 0;
@@ -179,7 +179,7 @@ hr{
 	content: '';
 	position: absolute;
 	border-left: 300px solid transparent;
-	border-bottom: calc(100vw - 100px) solid rgba(46, 48, 146, .8);
+	border-bottom: calc(100vw - 100px) solid rgba(46, 60, 78, .8);
     left: -300px;
     top: 0;
 }
@@ -192,7 +192,7 @@ hr{
 	bottom: 0;
 	left: 0;
 	z-index: 1050;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 	text-align: center;
 	line-height: calc(100vh);
 	vertical-align: middle;
@@ -209,7 +209,7 @@ hr{
 .navbar-light .navbar-nav .nav-link{
 	font-weight: bold;
 	font-size: 18px;
-	color: #2E3092;
+	color: #2C3C4E;
 	border-bottom: 2px solid #fff;
 	padding: 20px 10px;
 }
@@ -272,7 +272,7 @@ section{
 .department-news-card{
 	width: 90%;
 	margin: auto;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 	padding: 10px;
 }
 
@@ -289,7 +289,7 @@ section{
 }
 
 .carousel-controls span i{
-	color: #2E3092;
+	color: #2C3C4E;
 	font-size: 36pt;
 	font-weight: 100;
 }
@@ -319,7 +319,7 @@ section{
 
 .about-department-info{
 	padding: 20px;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 }
 
 .subdivisions{
@@ -403,7 +403,7 @@ section{
 	width: 100.25%;
 	height: 75px;
 	padding: 10px;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 	display: table;
 }
 
@@ -537,7 +537,7 @@ canvas{
 
 .proj-card{
 	margin-bottom: 20px;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 }
 
 .proj-img, .proj-info{
@@ -582,7 +582,7 @@ canvas{
 
 .partner{
 	margin-bottom: 30px;
-	border-left: 5px solid #2E3092;
+	border-left: 5px solid #2C3C4E;
 	padding: 10px;
 }
 
@@ -590,7 +590,7 @@ canvas{
 
 .footer{
 	width: 100%;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 	padding: 20px 0;
 }
 
@@ -650,7 +650,7 @@ canvas{
 .teachers-bar ul li a.active, .projects-bar ul li a.active{
 	color: #fff;
 	font-weight: bold;
-	background-color: #2E3092;
+	background-color: #2C3C4E;
 }
 
 .teachers-info, .projects-info{

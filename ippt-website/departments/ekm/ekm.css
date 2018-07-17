@@ -45,7 +45,7 @@ p{
 hr{
 	width: 10%;
 	height: 1px;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 }
 
 .publications hr{
@@ -56,12 +56,12 @@ hr{
 	color: white;
 }
 
-.text-light-blue{
-	color: #00A1E3;
+.text-blue{
+	color: #2C3C4E;
 }
 
-.text-light-blue a{
-	color: #00A1E3;
+.text-blue a{
+	color: #2C3C4E;
 }
 
 .text-green{
@@ -107,13 +107,13 @@ hr{
 	color: #A6CE39 !important;
 }
 
-.btn-light-blue{
-	background-color: #00A1E3;
-	border-color: #00A1E3;
+.btn-blue{
+	background-color: #2C3C4E;
+	border-color: #2C3C4E;
 	color: #fff !important;
 }
 
-.btn-light-blue:hover{
+.btn-blue:hover{
 	color: #A6CE39 !important;
 }
 
@@ -127,13 +127,13 @@ hr{
 	background-color: rgba(166, 206, 57, .8);
 }
 
-.light-blue-bg{
+.blue-bg{
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 161, 227, .8);
+	background-color: rgba(44, 60, 78, .8);
 }
 
 .blur-bg{
@@ -165,8 +165,8 @@ hr{
     top: 0;
 }
 
-.transfotrm-diagonal-light-blue{
-	background-color: rgba(0, 161, 227, .8);
+.transfotrm-diagonal-blue{
+	background-color: rgba(44, 60, 78, .8);
 	width: 18%;
 	position: absolute;
 	z-index: 0;
@@ -174,11 +174,11 @@ hr{
 	top: 0;
 	bottom: 0;
 }
-.transfotrm-diagonal-light-blue:before{
+.transfotrm-diagonal-blue:before{
 	content: '';
 	position: absolute;
 	border-left: 300px solid transparent;
-	border-bottom: calc(100vw - 100px) solid rgba(0, 161, 227, .8);
+	border-bottom: calc(100vw - 100px) solid rgba(44, 60, 78, .8);
     left: -300px;
     top: 0;
 }
@@ -191,7 +191,7 @@ hr{
 	bottom: 0;
 	left: 0;
 	z-index: 1050;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 	text-align: center;
 	line-height: calc(100vh);
 	vertical-align: middle;
@@ -208,7 +208,7 @@ hr{
 .navbar-light .navbar-nav .nav-link{
 	font-weight: bold;
 	font-size: 18px;
-	color: #00A1E3;
+	color: #2C3C4E;
 	border-bottom: 2px solid #fff;
 	padding: 20px 10px;
 }
@@ -271,7 +271,7 @@ section{
 .department-news-card{
 	width: 90%;
 	margin: auto;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 	padding: 10px;
 }
 
@@ -318,7 +318,7 @@ section{
 
 .about-department-info{
 	padding: 20px;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 }
 
 .education{
@@ -361,7 +361,7 @@ section{
 	width: 100%;
 	height: 75px;
 	padding: 10px;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 	display: table;
 }
 
@@ -484,7 +484,7 @@ canvas{
 
 .proj-card{
 	margin-bottom: 20px;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 }
 
 .proj-img, .proj-info{
@@ -529,7 +529,7 @@ canvas{
 
 .partner{
 	margin-bottom: 30px;
-	border-left: 5px solid #00A1E3;
+	border-left: 5px solid #2C3C4E;
 	padding: 10px;
 }
 
@@ -552,7 +552,7 @@ canvas{
 
 .footer{
 	width: 100%;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 	padding: 20px 0;
 }
 
@@ -612,7 +612,7 @@ canvas{
 .teachers-bar ul li a.active, .projects-bar ul li a.active{
 	color: #fff;
 	font-weight: bold;
-	background-color: #00A1E3;
+	background-color: #2C3C4E;
 }
 
 .teacher-ekm, .ekm-projects{
