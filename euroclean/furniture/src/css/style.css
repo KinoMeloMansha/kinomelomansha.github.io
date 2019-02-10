@@ -18,6 +18,12 @@ body {
 	background-color: white;
 }
 
+.logo-header {
+	/*margin-bottom: 15px;*/
+	margin: 0 auto 15px;
+	text-align: center;
+}
+
 .logo-header > *, .logo-footer > * {
 	vertical-align: middle;
 }
@@ -35,13 +41,20 @@ body {
 	padding-left: 15px;
 }
 
+.logo-header span {
+	width: auto;
+	text-align: left;
+}
+
 .phones-header {
-	width: 30%;
+	/*width: 30%;*/
+	width: 100%;
 }
 
 .phones {
 	display: block;
-	text-align: right;
+	/*text-align: right;*/
+	text-align: center;
 }
 
 .phones span {
@@ -82,6 +95,8 @@ a[href^="tel:"] {
 }
 
 .ask-question-header {
+	width: 100%;
+	text-align: center;
 	padding: 15px 0 0;
 	margin-left: 20px;
 }
@@ -128,8 +143,10 @@ a[href^="tel:"] {
 }
 
 .messengers-header {
+	width: 100%;
 	vertical-align: middle;
-	text-align: right;
+	/*text-align: right;*/
+	text-align: center;
 	padding: 15px 0 0;
 }
 
@@ -214,7 +231,7 @@ a[href^="tel:"] {
 	background-size: cover;
 	background-position: center;
 	padding: 75px 0 55px;
-	text-align: right;
+	text-align: center;
 }
 
 h1 {
@@ -580,6 +597,7 @@ h3 {
 
 .clients img {
 	height: 100px;
+	margin: 0 10px 10px;
 }
 
 .order-online {
@@ -641,19 +659,29 @@ h3 {
 	border-top: 1px solid #DEE8EF;
 }
 
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
-	
-}
+/*// Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) and (max-width: 767.98px) { 
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
+}*/
 
-}
+/*// Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) and (max-width: 991.98px) {
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
+}*/
 
+/*// Large devices (desktops, 992px and up)*/
+/*@media (min-width: 992px) and (max-width: 1199.98px) {
+	.logo-header {
+		margin-bottom: 0;
+	}
+
+	.phones-header {
+		width: 30%;
+	}
+
+	.phones {
+		text-align: right;
+	}
 }*/
 
 /*// Extra large devices (large desktops, 1200px and up)*/
@@ -661,6 +689,8 @@ h3 {
 @media (min-width: 1024px) {
 	.logo-header {
 		width: 35%;
+		text-align: left;
+		margin: 0;
 	}
 
 	.phones-header {
@@ -675,6 +705,16 @@ h3 {
 	.ask-question-header,
 	.messengers-header {
 		padding: 0;
+	}
+
+	.messengers-header {
+		text-align: right;
+		width: auto;
+	}
+
+	.ask-question-header {
+		width: auto;
+		text-align: left;
 	}
 
 	.ask-question-header span {
@@ -702,6 +742,15 @@ h3 {
 
 	.menu-header .navbar-nav .nav-link:first-child::before {
 		display: none;
+	}
+
+	.banner {
+		text-align: right;
+		background-size: 100%;
+	}
+
+	.banner .container .row {
+		justify-content: flex-start !important;
 	}
 
 	.why-we-icon {
