@@ -63,6 +63,14 @@ body {
 	position: relative;
 }
 
+.phones span:hover {
+	background-color: #459ccd;
+}
+
+.phones span:hover a {
+	color: #fff;
+}
+
 .phones span:first-child {
 	margin-bottom: 10px;
 }
@@ -558,12 +566,12 @@ h3 {
 }
 
 .gallery-img {
-	width: 98%;
 	margin-bottom: 5px;
+	text-align: center;
 }
 
 .gallery-img img {
-	width: 100%;
+	width: 98%;
 }
 
 .video-carousel {
@@ -589,6 +597,15 @@ h3 {
 .slick-prev::before,
 .slick-next::before {
 	display: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+	background-image: url('../img/carousel-arow.png');
+	background-size: 100%;
+	background-position: center;
 }
 
 .clients {
