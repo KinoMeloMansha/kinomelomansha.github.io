@@ -16,6 +16,88 @@
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
+	<!-- Modal -->
+	<div class="modal fade" id="askQuestionModal" tabindex="-1" role="dialog" aria-labelledby="askQuestionModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="askQuestionModalLabel">Введіть контактні дані і ми зв'яжемось з вами</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="form-body">
+				<div class="input-item">
+					<input type="text" placeholder="Ім'я">
+				</div>
+				<div class="input-item">
+					<input type="tel" placeholder="Телефон">
+				</div>
+				<div class="input-item">
+					<textarea placeholder="Ваше запитання"></textarea>
+				</div>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn main-btn main-btn-big">Задати питання</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="makeOrderModal" tabindex="-1" role="dialog" aria-labelledby="makeOrderModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="makeOrderModalLabel">Введіть контактні дані і ми зв'яжемось з вами</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="form-body">
+				<div class="input-item">
+					<input type="text" placeholder="Ім'я">
+				</div>
+				<div class="input-item">
+					<input type="tel" placeholder="Телефон">
+				</div>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn main-btn main-btn-big">Замовити</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="orderCallModal" tabindex="-1" role="dialog" aria-labelledby="orderCallModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="orderCallModalLabel">Введіть контактні дані і ми зв'яжемось з вами</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="form-body">
+				<div class="input-item">
+					<input type="text" placeholder="Ім'я">
+				</div>
+				<div class="input-item">
+					<input type="tel" placeholder="Телефон">
+				</div>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn main-btn main-btn-big">Замовити</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<header id="header" class="header">
 		<div class="top-header">
 			<div class="container">
@@ -31,7 +113,7 @@
 						</div>
 					</div> 
 					<div class="ask-question-header">
-						<button type="button" class="btn main-btn">Задати питання</button>
+						<button type="button" class="btn main-btn" data-toggle="modal" data-target="#askQuestionModal">Задати питання</button>
 						<span>Працюємо у вихідні</span>
 					</div>
 					<div class="messengers-header">
@@ -86,7 +168,7 @@
 								</div>
 							</div>
 							<div class="button-place">
-								<button type="button" class="btn main-btn">Замовити</button>
+								<button type="button" class="btn main-btn main-btn-big">Замовити</button>
 							</div>
 						</div>
 					</div>
@@ -154,7 +236,7 @@
 						</div>
 						<h3 class="dg-bg">Крісло 1 місце</h3>
 						<span class="lg-bg">200</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -164,7 +246,7 @@
 						</div>
 						<h3 class="dg-bg">Диван 2 місця</h3>
 						<span class="lg-bg">400</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -174,7 +256,7 @@
 						</div>
 						<h3 class="dg-bg">Диван 3 місця</h3>
 						<span class="lg-bg">500</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -184,7 +266,7 @@
 						</div>
 						<h3 class="dg-bg">Диван 4-5 місць</h3>
 						<span class="lg-bg">600</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -194,7 +276,7 @@
 						</div>
 						<h3 class="dg-bg">Диван 6-8 місць</h3>
 						<span class="lg-bg">700</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 			</div>
@@ -206,7 +288,7 @@
 						</div>
 						<h3 class="dg-bg">Килим</h3>
 						<span class="lg-bg">50</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -216,7 +298,7 @@
 						</div>
 						<h3 class="dg-bg">Матрац 1 місце</h3>
 						<span class="lg-bg">300</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -226,7 +308,7 @@
 						</div>
 						<h3 class="dg-bg">Матрац 2 місця</h3>
 						<span class="lg-bg">500</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-2">
@@ -236,7 +318,7 @@
 						</div>
 						<h3 class="dg-bg">Салон авто</h3>
 						<span class="lg-bg">1500</span>
-						<button type="button" class="btn btn-blue">Замовити</button>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
 					</div>
 				</div>
 			</div>
@@ -469,7 +551,7 @@
 		</div>
 	</div>
 
-	<div id="reviews" class="reviews"></div>
+	<!-- <div id="reviews" class="reviews"></div> -->
 
 	<div id="contacts" class="contacts">
 		<div class="container">
@@ -477,7 +559,7 @@
 			<img src="src/img/kyivstar-icon.png" alt="kyivstar-icon.png">
 			<div class="contacts-phone">+38 (097) 253 90 00</div>
 			<div class="alternative">або замовте дзвінок онлайн</div>
-			<button type="button" class="btn main-btn">Замовити дзвінок</button>
+			<button type="button" class="btn main-btn main-btn-big" data-toggle="modal" data-target="#orderCallModal">Замовити дзвінок</button>
 		</div>
 	</div>
 
