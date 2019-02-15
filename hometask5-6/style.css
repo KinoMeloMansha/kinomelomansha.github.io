@@ -53,6 +53,13 @@ button {
 	padding: 15px;
 	display: block;
 	margin: auto;
+	border: 1px solid red;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #fff;
+	color: red;
 }
 
 
