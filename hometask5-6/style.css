@@ -25,7 +25,7 @@ h2:hover {
 
 form {
 	width: 50%;
-	margin: auto;
+	margin: 0 auto 35px;
 	background-color: white;
 	padding: 20px;
 	border: 1px solid #000;
@@ -42,10 +42,17 @@ input, select, textarea {
 	width: 100%;
 	display: block;
 	border: 1px dotted #333;
+	margin-bottom: 15px;
 }
 
-input, select {
-	margin-bottom: 15px;
+button {
+	width: 50%;
+	background-color: red;
+	color: #fff;
+	border: none;
+	padding: 15px;
+	display: block;
+	margin: auto;
 }
 
 
