@@ -851,17 +851,20 @@ a[href^="tel:"] {
 }
 
 .footer .logo-footer {
+	display: block;
+	width: 50%;
 	padding: 15px 0;
 }
 
 .footer .adress {
+	width: 80%;
 	font-size: 1.3em;
 	font-weight: bold;
-	padding: 15px 0;
+	padding: 15px;
 }
 
 .footer .facebook-footer {
-	width: 100px;
+	width: 20%;
 	padding: 15px 0;
 }
 
@@ -1056,6 +1059,19 @@ a[href^="tel:"] {
 	.video-carousel iframe {
 		width: 480px;
 		height: 300px;
+	}
+
+	.footer .logo-footer {
+		width: 40%;
+	}
+
+	.footer .adress {
+		width: 50%;
+		text-align: right;
+	}
+
+	.footer .facebook-footer {
+		width: 10%;
 	}
 
 }
