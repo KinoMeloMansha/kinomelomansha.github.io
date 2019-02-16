@@ -16,36 +16,7 @@
 	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-	<!-- Modal -->
-	<div class="modal fade" id="askQuestionModal" tabindex="-1" role="dialog" aria-labelledby="askQuestionModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="askQuestionModalLabel">Введіть контактні дані і ми зв'яжемось з вами</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <div class="form-body">
-				<div class="input-item">
-					<input type="text" placeholder="Ім'я">
-				</div>
-				<div class="input-item">
-					<input type="tel" placeholder="Телефон">
-				</div>
-				<div class="input-item">
-					<textarea placeholder="Ваше запитання"></textarea>
-				</div>
-			</div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn main-btn main-btn-big">Задати питання</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
+	<!-- Modals -->
 	<div class="modal fade" id="makeOrderModal" tabindex="-1" role="dialog" aria-labelledby="makeOrderModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-dialog-centered" role="document">
 	    <div class="modal-content">
@@ -104,23 +75,29 @@
 				<div class="row justify-content-between align-items-center">
 					<div class="logo-header">
 						<img src="src/img/logo.png" alt="header-logo">
-						<span>Професійна <br> хімчистка авто</span>
+						<span>Професійна <br> хімчистка</span>
 					</div>
 					<div class="phones-header">
 						<div class="phones">
-							<span><a href="tel:+380982748749">097 218-9000</a></span>
-							<span><a href="tel:+380982748749">093 218-9000</a></span>
+							<span><a href="tel:+380982748749">097 253-9000</a></span>
+							<span><a href="tel:+380982748749">093 253-9000</a></span>
 						</div>
-					</div> 
-					<div class="ask-question-header">
-						<button type="button" class="btn main-btn" data-toggle="modal" data-target="#askQuestionModal">Задати питання</button>
-						<span>Працюємо у вихідні</span>
 					</div>
 					<div class="messengers-header">
 						<a href="#viber"><img src="src/img/viber-icon.png" alt="viber-icon"></a>
 						<a href="#messenger"><img src="src/img/messenger-icon.png" alt="messenger-icon"></a>
 						<a href="#telegram"><img src="src/img/telegram-icon.png" alt="telegram-icon"></a>
+					</div>
+					<div class="ask-question-header">
+						<button type="button" class="btn main-btn" data-toggle="modal" data-target="#orderCallModal">Замовити дзвінок</button>
+						<span>Працюємо у вихідні</span>
+					</div>
+					<div class="messengers-header">
 						<a href="#instagram"><img src="src/img/instagram-icon.png" alt="instagram-icon.png"></a>
+						<a href="#messenger"><img src="src/img/facebook-icon.png" alt="facebook-icon"></a>
+					</div>
+					<div class="lviv-header">
+						<img src="src/img/lviv-logo.png" alt="lviv-logo.png">
 					</div>
 				</div>
 			</div>
@@ -135,11 +112,8 @@
 					    <div class="navbar-nav">
 					        <a class="nav-item nav-link active" href="#banner">Головна</a>
 					        <a class="nav-item nav-link" href="#our-services">Послуги</a>
-					        <a class="nav-item nav-link" href="#we-use">Як ми працюємо</a>
 					        <a class="nav-item nav-link" href="#gallery">Галерея</a>
-					        <a class="nav-item nav-link" href="#prices">Система лояльності</a>
 					        <a class="nav-item nav-link" href="#reviews">Відгуки</a>
-					        <a class="nav-item nav-link" href="#about-us">Про нас </a>
 					        <a class="nav-item nav-link" href="#contacts">Контакти</a>
 					    </div>
 				    </div>
@@ -181,7 +155,7 @@
 		<div class="container">
 			<h2>Наші послуги</h2>
 			<div class="row justify-content-center">
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="service service-1">
 						<div class="service-img"></div>
 						<h3>Чистка диванів</h3>
@@ -189,7 +163,7 @@
 						<button type="button" class="btn btn-service">Детальніше</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="service service-3">
 						<div class="service-img"></div>
 						<h3>Чистка матраців</h3>
@@ -197,7 +171,7 @@
 						<button type="button" class="btn btn-service">Детальніше</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="service service-2">
 						<div class="service-img"></div>
 						<h3>Чистка килимів</h3>
@@ -205,7 +179,7 @@
 						<button type="button" class="btn btn-service">Детальніше</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="service service-4">
 						<div class="service-img"></div>
 						<h3>Чистка салону авто</h3>
@@ -213,7 +187,7 @@
 						<button type="button" class="btn btn-service">Детальніше</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="service service-5">
 						<div class="service-img"></div>
 						<h3>Виїзд до клієнта</h3>
@@ -284,6 +258,16 @@
 				<div class="col-12 col-sm-6 col-lg-2">
 					<div class="price">
 						<div class="price-img">
+							<img src="src/img/chair.jpg" alt="chair.jpg">
+						</div>
+						<h3 class="dg-bg">Стільці 1 місце</h3>
+						<span class="lg-bg">60</span>
+						<button type="button" class="btn btn-blue"" data-toggle="modal" data-target="#makeOrderModal">Замовити</button>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-2">
+					<div class="price">
+						<div class="price-img">
 							<img src="src/img/carpet.jpg" alt="carpet.jpg">
 						</div>
 						<h3 class="dg-bg">Килим</h3>
@@ -349,6 +333,10 @@
 					<div class="why-we-icon why-we-icon-5"></div>
 					<p>Гарантія на послуги 100% 30 днів</p>
 				</div>
+				<div class="col-12 col-sm-6 col-lg-2">
+					<div class="why-we-icon why-we-icon-6"></div>
+					<p>Понад 10 000 клієнтів замовили та стали нашими постійними клієнтами.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -404,11 +392,13 @@
 				<div class="row no-gutters justify-content-center">
 					<div class="technology-item">
 						<h3>Використовуємо професійну техніку та хімію</h3>
-						<p>Використовуємо професійну німецьку техніку. Яка дуже ефективно відчистить будь-які забруднення швидко та без шкоди тканині.</p>
+						<p>Використовуємо професійну німецьку техніку. Яка дуже ефективно відчистить будь-які забруднення швидко та без шкоди тканині.
+						Використовуємо обладнання, що вважається найкращим у світі.</p>
 					</div>
 					<div class="technology-item">
 						<h3>Безпечена те гіпоалергенна професійна хімія</h3>
-						<p>Використовуємо сертифікаціну хімію німецілького та італійського виробництва, що спецільно розроблена для чистки м'яких меблів, диванів, матрців та килимів.</p>
+						<p>Використовуємо сертифікаціну хімію німецілького та італійського виробництва, що спецільно розроблена для чистки м'яких меблів, диванів, матрців та килимів.
+						Хімія не має запаху та шкідливих випарів.</p>
 					</div>
 					<div class="technology-item">
 						<h3>Професійний кваліфікований персонал</h3>
@@ -425,56 +415,74 @@
 
 	<section id="gallery" class="gallery">
 		<div class="container">
-			<h2>Фото та відео хімчистки м'якої мебелі та килимів</h2>
+			<h2>Фото та відео хімчистки м'яких мебелів та килимів</h2>
 			<div class="photo">
 				<div class="photo-carousel">
 					<div class="gallery-img">
-						<img src="src/img/photos/s_8.jpg" alt="s_8.jpg">
+						<img src="src/img/photos/p_1.jpg" alt="p_1.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_2.jpg" alt="s_2.jpg">
+						<img src="src/img/photos/p_22.jpg" alt="p_22.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_3.jpg" alt="s_3.jpg">
+						<img src="src/img/photos/p_3.jpg" alt="p_3.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_4.jpg" alt="s_4.jpg">
+						<img src="src/img/photos/p_4.jpg" alt="p_4.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_5.jpg" alt="s_5.jpg">
+						<img src="src/img/photos/p_5.jpg" alt="p_5.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_6.jpg" alt="s_6.jpg">
+						<img src="src/img/photos/p_6.jpg" alt="p_6.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_7.jpg" alt="s_7.jpg">
+						<img src="src/img/photos/p_7.jpg" alt="p_7.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_8.jpg" alt="s_8.jpg">
+						<img src="src/img/photos/p_8.jpg" alt="p_8.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_8.jpg" alt="s_8.jpg">
+						<img src="src/img/photos/p_9.jpg" alt="p_9.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_2.jpg" alt="s_2.jpg">
+						<img src="src/img/photos/p_10.jpg" alt="p_10.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_3.jpg" alt="s_3.jpg">
+						<img src="src/img/photos/p_11.jpg" alt="p_11.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_4.jpg" alt="s_4.jpg">
+						<img src="src/img/photos/p_12.jpg" alt="p_12.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_5.jpg" alt="s_5.jpg">
+						<img src="src/img/photos/p_13.jpg" alt="p_13.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_6.jpg" alt="s_6.jpg">
+						<img src="src/img/photos/p_14.jpg" alt="p_14.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_7.jpg" alt="s_7.jpg">
+						<img src="src/img/photos/p_15.jpg" alt="p_15.jpg">
 					</div>
 					<div class="gallery-img">
-						<img src="src/img/photos/s_8.jpg" alt="s_8.jpg">
+						<img src="src/img/photos/p_16.jpg" alt="p_16.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_17.jpg" alt="p_17.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_18.jpg" alt="p_18.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_19.jpg" alt="p_19.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_20.jpg" alt="p_20.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_21.jpg" alt="p_21.jpg">
+					</div>
+					<div class="gallery-img">
+						<img src="src/img/photos/p_2.jpg" alt="p_2.jpg">
 					</div>
 				</div>
 			</div>
@@ -489,9 +497,6 @@
 				    </div>
 				    <div>
 				    	<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/XYIUN2OsH6o"></iframe>
-				    </div>
-				    <div>
-				    	<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/RGBAw1MrqDk"></iframe>
 				    </div>
 			  </div>
 			</div>
@@ -568,7 +573,7 @@
 			<div class="row justify-content-between align-items-center">
 				<div class="logo-footer">
 					<img src="src/img/logo.png" alt="header-logo">
-					<span>Професійна <br> хімчистка авто</span>
+					<span>Професійна <br> хімчистка</span>
 				</div>
 				<div class="adress">Адреса: м. Львів, вул. Наукова 2д</div>
 				<div class="facebook-footer">

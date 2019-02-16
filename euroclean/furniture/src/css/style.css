@@ -21,7 +21,7 @@ h1 {
 	margin-bottom: 2rem;
 	display: inline-block;
 	background-color: #459ccd;
-	padding: 10px 0;
+	padding: 10px;
 }
 
 h2 {
@@ -253,7 +253,6 @@ h3 {
 }
 
 .logo-header {
-	/*margin-bottom: 15px;*/
 	margin: 0 auto 15px;
 	text-align: center;
 }
@@ -291,7 +290,7 @@ h3 {
 
 .phones span {
 	display: inline-block;
-	padding-left: 25px;
+	padding: 5px 5px 5px 35px;
 	position: relative;
 }
 
@@ -304,7 +303,6 @@ h3 {
 }
 
 .phones span:first-child {
-	margin-bottom: 10px;
 	margin-right: 25px;
 }
 
@@ -312,12 +310,12 @@ h3 {
 .phones span:last-child::before {
 	content: ' ';
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	left: 0;
-	top: 0;
+	left: 5px;
+	top: 7px;
 }
 
 .phones span:first-child::before {
@@ -350,6 +348,7 @@ a[href^="tel:"] {
 	vertical-align: middle;
 	text-align: center;
 	padding: 15px 0 0;
+	margin-bottom: 25px;
 }
 
 .messengers-header a {
@@ -360,6 +359,16 @@ a[href^="tel:"] {
 
 .messengers-header a img {
 	width: 100%;
+}
+
+.lviv-header {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.lviv-header img {
+	width: 10%;
 }
 
 .menu-header {
@@ -430,7 +439,7 @@ a[href^="tel:"] {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 15px 0 15px;
+	padding: 45px 0 45px;
 	text-align: center;
 }
 
@@ -591,6 +600,10 @@ a[href^="tel:"] {
 
 .why-we-icon-5 {
 	background-image: url('../img/why-we-icon-5.png');
+}
+
+.why-we-icon-6 {
+	background-image: url('../img/why-we-icon-6.png');
 }
 
 .why-we p {
@@ -792,7 +805,7 @@ a[href^="tel:"] {
 /* ===== FOOTER ===== */
 
 .footer {
-	padding: 35px 0;
+	padding: 35px 0 0;
 }
 
 .footer .logo-footer {
@@ -831,10 +844,15 @@ a[href^="tel:"] {
 	.clients img {
 		height: 50px;
 	}
+
+	.banner {
+		height: 500px;
+	}
 }
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
+/*@media (min-width: 992px) and (max-width: 1199.98px) {*/
+@media (min-width: 992px) and (max-width: 1023.98px) {
 	/*.logo-header {
 		margin-bottom: 0;
 	}
@@ -846,10 +864,8 @@ a[href^="tel:"] {
 	.phones {
 		text-align: right;
 	}*/
-	.banner {
-		padding: 55px 0 55px;
-	}
 }
+
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 /*@media (min-width: 1200px) {*/
@@ -861,16 +877,25 @@ a[href^="tel:"] {
 	}
 
 	.phones-header {
-		width: auto;
+		width: 15%;
 	}
 
 	.phones span {
 		display: block;
-		width: 120px;
+		width: 100%;
+		padding-left: 25px;
 	}
 
 	.phones span:first-child {
 		margin-right: 0;
+	}
+
+	.phones span:first-child::before,
+	.phones span:last-child::before {
+		width: 20px;
+		height: 20px;
+		left: 0;
+		top: 5px;
 	}
 
 	a[href^="tel:"] {
@@ -880,6 +905,7 @@ a[href^="tel:"] {
 	.ask-question-header,
 	.messengers-header {
 		padding: 0;
+		margin-bottom: 0;
 	}
 
 	.messengers-header {
@@ -894,7 +920,7 @@ a[href^="tel:"] {
 	.ask-question-header {
 		width: auto;
 		text-align: left;
-	padding: 15px 0 0;
+		padding: 15px 0 0;
 	}
 
 	.ask-question-header span {
@@ -903,7 +929,16 @@ a[href^="tel:"] {
 		text-align: center;
 	}
 
+	.lviv-header {
+		width: 5%;
+	}
+
+	.lviv-header img {
+		width: 100%;
+	}
+
 	.navbar-nav {
+		width: 100%;
 		padding: 0;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -911,13 +946,9 @@ a[href^="tel:"] {
 	}
 
 	.menu-header .navbar-nav .nav-link{
-		width: 21%;
+		width: 15%;
 		text-align: center;
 		vertical-align: middle;
-	}
-
-	.menu-header .navbar-nav .nav-link:nth-child(-n+4) {
-		margin-bottom: 10px;
 	}
 
 	.menu-header .navbar-nav .nav-link:first-child::before {
@@ -925,9 +956,11 @@ a[href^="tel:"] {
 	}
 
 	.banner {
+		height: 600px;
 		text-align: right;
-		background-size: 100%;
-		padding: 55px 0;
+		background-size: cover;
+		background-position: bottom;
+		padding-top: 115px;
 	}
 
 	.banner .container .row {
