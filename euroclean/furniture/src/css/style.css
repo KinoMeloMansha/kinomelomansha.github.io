@@ -11,6 +11,48 @@ body {
     color: #676767;
 }
 
+/* ===== Popup ===== */
+
+.image {
+	cursor:zoom-in;
+}
+
+.popup {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+
+.popup_bg {
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+}
+
+
+.popup_img {
+	position: fixed;
+	z-index: 2;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%,-50%);
+	max-height: 75%;
+}
+
+.popup_img {
+	pointer-events: none;
+}
+
 /* ===== HEADING & TEXT ===== */
 
 h1 {
@@ -819,8 +861,13 @@ a[href^="tel:"] {
 }
 
 .footer .facebook-footer {
-	width: 25px;
+	width: 100px;
 	padding: 15px 0;
+}
+
+.footer .facebook-footer a {
+	display: inline-block;
+	width: 25px;
 }
 
 .footer .facebook-footer img {
