@@ -39,7 +39,6 @@ body {
 	height: auto;
 }
 
-
 .popup_img {
 	position: fixed;
 	z-index: 2;
@@ -491,6 +490,10 @@ a[href^="tel:"] {
 	background-color: #fff;
 	padding: 70px 0 35px;
     text-align: center;
+}
+
+.our-services .col-lg-2 {
+	max-width: 20%;
 }
 
 .service {
