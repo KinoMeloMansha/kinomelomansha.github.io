@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BU Intership</title>
+	<link rel="stylesheet" href="sources/css/style.css">
+	<link rel="shortcut icon" href="sources/img/main/title.png" type="image/x-icon">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<div class="popup">
+		<div class="modal fade send_request" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			<div class="modal-dialog singin" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<div><label for="login">Логін</label><input type="text" id="login" class="login"></div>
+			    		<div><label for="password">Пароль</label><input type="password" id="password" class="password"></div>
+			    		<p><span>Забули пароль?</span></p>
+			    		<button class="sing_in">УВІЙТИ</button>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+	
+			<div class="modal-dialog request" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<div><label for="login">Прізвище</label><input type="text" placeholder="Hello" class="fname"></div>
+			    		<div><label for="password">Ім'я</label><input type="password" placeholder="World" class="lname"></div>
+			    		<p>
+				    		<form>
+				    			<label class="label_checkbox">Front-end Development/верстка<input type="checkbox" class="checkbox"></label>
+				    			<label class="label_checkbox">Front-end Development/JavaScript<input type="checkbox" class="checkbox"></label>
+				    			<label class="label_checkbox">Java Enterprise<input type="checkbox" class="checkbox"></label>
+				    			<label class="label_checkbox">ASP.NET<input type="checkbox" class="checkbox"></label>
+				    			<label class="label_checkbox">Quality Assurance<input type="checkbox" class="checkbox"></label>
+				    			<label class="label_checkbox">Business Analysis<input type="checkbox" class="checkbox"></label>
+				    		</form>
+			    		</p>
+			    		<button class="send">НАДІСЛАТИ</button>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+	
+			<div class="modal-dialog send_success" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<p><span class="img img_success"><img src="sources/img/modals/success.png" alt="success"></span></p>
+			    		<p><span>Дякуємо! Вашу заявку було відправленно на перегляд до адміністратора, і з Вами зв'яжуться!</span></p>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+	
+			<div class="modal-dialog send_error_login can_close" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<p><span class="img img_error"><img src="sources/img/modals/error.png" alt="error"></span></p>
+			    		<p><span>Введено не вірний логін, спробуйте ще раз.</span></p>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+	
+			<div class="modal-dialog send_error_password can_close" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<p><span class="img img_error"><img src="sources/img/modals/error.png" alt="error"></span></p>
+			    		<p><span>Введено не вірний пароль, спробуйте ще раз.</span></p>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+	
+			<div class="modal-dialog send_error_notAlumnus can_close" role="document">
+			    <div class="modal-content">
+			    <div class="modal-header">
+			    	<a class="close" aria-label="Close"><span aria-hidden="true"><img src="sources/img/modals/close_information.png" alt="close_information"></span></a>
+			    </div>
+			    <div class="modal-body">
+			    	<div class="form">
+			    		<p><span class="img img_error"><img src="sources/img/modals/error.png" alt="error"></span></p>
+			    		<p><span>Вибачте, на жаль, ви не є випускником жодної з програм Bionic, тому наразі не можете надіслати заявку на участь в інтернатурі.</span></p>
+			    	</div>
+			    </div>
+			    <div class="modal-footer"></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header" id="navbar">
+		<nav  class="navbar navbar-default navbar-fixed-top navbar-yellow">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+						<div class="navbar-header">
+	                        <button type="button" class="navbar-toggle collapsed header-button" data-toggle="collapse" data-target=".dev-navbar-collapse" aria-expanded="false">
+	                            <span class="sr-only">Toggle navigation</span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </button>
+	                        <a class="navbar-brand" href="#"><img src="sources/img/main/dev-studio.png" alt="dev-studio_internship_logo"></a>
+	                    </div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-11 col-xs-12">
+						<div class="collapse navbar-collapse dev-navbar-collapse" id="bs-example-navbar-collapse-1">
+	                        <ul class="nav navbar-nav">
+	                            <li><a href="#about_us">Про нас</a></li>
+	                            <li><a href="#join_us">Як приєднатись</a></li>
+	                            <li><a href="#directions">Напрямки</a></li>
+	                            <li><a href="#advantages">Переваги</a></li>
+	                            <li><a href="#projects">Проекти</a></li>
+	                            <li><a href="#reviews">Відгуки</a></li>
+	                            <li><a href="#contacts">Контакти</a></li>
+	                        </ul>
+	                    </div>
+					</div>
+					<div class="col-lg-2 col-md-2 small-menu">
+						<div class="collapse navbar-collapse navbar-header avt dev-navbar-collapse ">
+	                        <ul class="nav navbar-nav">
+	                            <li name="application" data-toggle="modal" data-target=".send_request"><a class="cursorpointer">Подати заявку</a></li>
+	                        </ul>
+	                    </div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="internship" id="intership">
+		<section class="about_us" id="about_us">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 marginishka">
+						<div id="carousel-example-generic" class="carousel" data-ride="carousel">
+							<!-- Wrapper for slides -->
+							<a class="carousel-item item"><img src="sources/img/carousel/banner1.jpg" alt="banner1"></a>
+							<a class="carousel-item item"><img src="sources/img/carousel/banner2.jpg" alt="banner2"></a>
+							<a class="carousel-item item"><img src="sources/img/carousel/banner3.jpg" alt="banner3"></a>
+							<a class="carousel-item item"><img src="sources/img/carousel/banner4.jpg" alt="banner4"></a>
+							<a class="carousel-item item"><img src="sources/img/carousel/banner5.jpg" alt="banner5"></a>
+						</div>
+						<div class="controls">
+							<!-- Controls -->
+						    <a id="left" class="left carousel-control" data-slide="prev">
+						    	<span class="glyphicon glyphicon-chevron-left">
+						    		<img src="sources/img/carousel/prev_carousel.png" alt="prev_carousel_img">
+						    	</span>
+						  	</a>
+						    <a id="right" class="right carousel-control" data-slide="next">
+						    	<span class="glyphicon glyphicon-chevron-right">
+						    		<img src="sources/img/carousel/next_carousel.png" alt="next_carousel_img">
+						    	</span>
+						    </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="join_us">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="info">
+							<p><span class="bold_span">Інтернатура BU DevStudio</span> – це досвід командної роботи над реальним бізнес-проектом для випусників BIONIC School. П'ять місяців інтерни розробляють програмні рішення для замовника та презентують готовий продукт (MVP) у кінці.</p>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginishka"  id="join_us">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Як потрапити в BU Internship</h2>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 steps">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 step">
+							<div class="step_img">
+								<img src="sources/img/steps/step_1.png" alt="step_1">
+							</div>
+							<h4>step 1</h4>
+							<h3>Тест та співбесіда</h3>
+							<p>Визначаємо твій рівень знань та підбираємо навчальну програму.</p>
+							<form>
+								<button type="button" name="test" class="test">Пройти тест</button>
+							</form>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 step next_step">
+							<img src="sources/img/steps/next_step.png" alt="next_step_1">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 step">
+							<div class="step_img">
+								<img src="sources/img/steps/step_2.png" alt="step_2">
+							</div>
+							<h4>step 2</h4>
+							<h3>Навчання за напрямом</h3>
+							<p>Ти проходиш навчання та здобуваєш теоретичні й практичні навички для роботи над проектом. Успішно завершивши підготовку - отримуєш запрошення в інтернатуру</p>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 step next_step">
+							<img src="sources/img/steps/next_step.png" alt="next_step_2">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 step">
+							<div class="step_img">
+								<img src="sources/img/steps/step_3.png" alt="step_3">
+							</div>
+							<h4>step 3</h4>
+							<h3>інтернатура</h3>
+							<p>Команди інтернів формуються за результатами командних ігор, психологічних тестів та співбесіди. <span class="text_none">Кожна команда отримує унікальний проект, який має презентувати клієнту.</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="directions" id="directions">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-2 col-md-2 col-sm-4 col-xs-4">Напрямки</h2>
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<div class="marginishka">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padinishka">
+								<div class=" div_blue one">
+									<p>Напрям має дві спеціалізації: верстка сторінок (HTML, CSS і фреймворки) і Javascript+Angular для розробки клієнтської частини веб-додатків.</p>
+									<div class=" div_yellow one">
+										<h3>Front End</h3>
+										<h4>Дізнатись більше</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padinishka">
+								<div class=" div_blue two">
+									<p>В рамках цієї технології слухачі опановують один з двох напрямів: розробка великих корпоративних проектів за допомогою  Enterprise Edition, або створення мобільних додатків для Android.</p>
+									<div class=" div_yellow two">
+										<h3>Java</h3>
+										<h4>Дізнатись більше</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padinishka">
+								<div class=" div_blue three">
+									<p>Технологія створення веб-додатків та веб-сервісів від компанії Microsoft. Навчання за даним напрямом потребує навичок програмування за допомогою .NET framework.</p>
+									<div class=" div_yellow three">
+										<h3>Asp.net</h3>
+										<h4>Дізнатись більше</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padinishka">
+								<div class=" div_blue four">
+									<p>Програми цього напряму готують  бізнес-аналітиків для ведення комунікації між замовниками та командою розробників, і тестувальників для контролю якості розробленого продукту.</p>
+									<div class=" div_yellow four">
+										<h3>QA + BA</h3>
+										<h4>Дізнатись більше</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 addApplications">
+									<button type="button" name="application" class="addApplication" data-toggle="modal" data-target=".send_request">Подати заявку</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages" id="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padinishka">
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-2 col-md-2 col-sm-4 col-xs-4">Переваги</h2>
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<div class="col-md-12 marginishka">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage first">
+									<div class="advantage_img">
+										<span class="img img_first"></span>
+									</div>
+									<h3>Досвідченні тімліди</h3>
+									<p>Роботу кожної команди координує досвідчений розробник.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage second">
+									<div class="advantage_img">
+										<span class="img img_second"></span>
+									</div>
+									<h3>Робота в команді</h3>
+									<p>Над успіхом проекту працюють front-end та back-end розробники, а також тестувальники та бізнес-аналітики.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage third">
+									<div class="advantage_img">
+										<span class="img img_third"></span>							
+									</div>
+									<h3>Agile підхід</h3>
+									<p>Розробка проектів відбувається за гнучкими методологіями Agile/Scrum, що є основою сучасної розробки ПЗ.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage fourth">
+									<div class="advantage_img">
+										<span class="img img_fourth"></span>
+									</div>
+									<h3>Іноземні замовлення</h3>
+									<p>Наші замовники - українські та зарубіжні компанії. Проекти, які ми виконуємо, вирішують їхні актуальні бізнес-задачі.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage fiveth">
+									<div class="advantage_img">
+										<span class="img img_fiveth"></span>
+									</div>
+									<h3>Працевлаштування</h3>
+									<p> Інтернатура гарантує достатньо високий рівень знань та навичок для працевлаштування в провідних ІТ-компаніях.</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="advantage sixth">
+									<div class="advantage_img">
+										<span class="img img_sixth"></span>
+									</div>
+									<h3>Різномаїття проектів</h3>
+									<p>Проекти інтернатури включають розробку веб-програм та мобільних додатків для автоматизації бізнесу, e-commerce, соціальної сфери, та ін.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-2 col-md-2 col-sm-4 col-xs-4">Проекти</h2>
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<div class="marginishka">
+						<div id="Carousel" class="carousel slide">
+			                <!-- Carousel items -->
+			                <div class="carousel-inner">
+								<div class="row">
+									<div class="projects_information">
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-1" id="information-1">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 1</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_first.png" alt="project_first_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-2" id="information-2">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 2</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_second.png" alt="project_second_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-3" id="information-3">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 3</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_third.png" alt="project_third_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-4" id="information-4">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 4</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_fourth.png" alt="project_fourth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-5" id="information-5">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 5</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_fiveth.png" alt="project_fiveth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-6" id="information-6">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 6</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_sixth.png" alt="project_sixth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-7" id="information-7">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 7</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_sixth.png" alt="project_seventh_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-8" id="information-8">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 8</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_fiveth.png" alt="project_eighth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-9" id="information-9">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 9</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_fourth.png" alt="project_nineth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-10" id="information-10">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 10</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_third.png" alt="project_tenth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-11" id="information-11">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 11</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_second.png" alt="project_eleventh_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+			                	  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 information information-12" id="information-12">
+			                	  			<span class="close_information"><img src="sources/img/modals/close_information.png" alt=""></span>
+			                	  			<h5>Project 12</h5>
+			                	  			<h6>
+			                	  				<img src="sources/img/projects/project_first.png" alt="project_twelveth_img">
+			                	  				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</span>
+			                	  			</h6> 
+			                	  			<div class="both"></div>
+			                	  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at commodi quo ullam sit, quasi ea placeat illum, provident asperiores, quis, minus delectus quaerat esse voluptates nihil vel qui. Nobis?</p>
+			                	  			<p><a href="#ProjectLink">Sponsored link</a></p>
+			                	  		</div>
+										
+									</div>
+								</div>
+			                	<div class="row">
+			                		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-4 prev_project"><a href="#Carousel" class="thumbnail step_left" data-slide="prev"><img src="sources/img/projects/prev_project.png" alt="prev_project" style="max-width:100%;"></a></div>
+			                		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-4 next_project"><a href="#Carousel" class="thumbnail step_right" data-slide="next"><img src="sources/img/projects/next_project.png" alt="next_project" style="max-width:100%;"></a></div>
+			                	</div>
+		
+					                <div class="item active">
+					                	<div class="row">
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj proj_hidden proj_hidden_big"><a class="thumbnail hidden_div"><img src="sources/img/projects/project_first.png" alt="Image"></a></div>
+		
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+							                	<a class="thumbnail effects effect-1" id="proj_img1">
+							                		<div class="caption caption-1" id="caption-1">
+							                			<h3>Project 1</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_first.png" alt="Image" style="max-width:100%;">
+							                	</a>
+					                	  	</div>
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+					                	  		<a class="thumbnail effects effect-2" id="proj_img2">
+					                	  			<div class="caption caption-2" id="caption-2">
+							                			<h3>Project 2</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_second.png" alt="Image" style="max-width:100%;">
+					                	  		</a>
+					                	  	</div>
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+					                	  		<a class="thumbnail effects effect-3"  id="proj_img3">
+					                	  			<div class="caption caption-3" id="caption-3">
+							                			<h3>Project 3</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_third.png" alt="Image" style="max-width:100%;">
+					                	  		</a>
+					                	  	</div>
+					                	 	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+					                	 		<a class="thumbnail effects effect-4" id="proj_img4">
+					                	 			<div class="caption caption-4" id="caption-4">
+							                			<h3>Project 4</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_fourth.png" alt="Image" style="max-width:100%;">
+					                	 		</a>
+					                	 	</div>
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+					                	  		<a class="thumbnail effects effect-5"  id="proj_img5">
+					                	  			<div class="caption caption-5" id="caption-5">
+							                			<h3>Project 5</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_fiveth.png" alt="Image" style="max-width:100%;">
+					                	  		</a>
+					                	  	</div>
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+					                	  		<a class="thumbnail effects effect-6"  id="proj_img6">
+					                	  			<div class="caption caption-6" id="caption-6">
+							                			<h3>Project 6</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_sixth.png" alt="Image" style="max-width:100%;">
+					                	  		</a>
+					                	  	</div>
+		
+					                	  	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj proj_hidden proj_hidden_small"><a class="thumbnail hidden_div"><img src="sources/img/projects/project_sixth.png" alt="Image" ></a></div>
+					                	</div>
+					                </div>
+					                 
+					                <div class="item">
+					                	<div class="row">
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj proj_hidden proj_hidden_big"><a class="thumbnail hidden_div"><img src="sources/img/projects/project_sixth.png" alt="Image"></a></div>
+		
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-7"  id="proj_img7">
+						                			<div class="caption caption-7" id="caption-7">
+							                			<h3>Project 7</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_sixth.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-8"  id="proj_img8">
+						                			<div class="caption caption-8" id="caption-8">
+							                			<h3>Project 8</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_fiveth.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-9"  id="proj_img9">
+						                			<div class="caption caption-9" id="caption-9">
+							                			<h3>Project 9</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_fourth.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-10"  id="proj_img10">
+						                			<div class="caption caption-10" id="caption-10">
+							                			<h3>Project 1</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_third.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-11"  id="proj_img11">
+						                			<div class="caption caption-11" id="caption-11">
+							                			<h3>Project 11</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_second.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj">
+						                		<a class="thumbnail effects effect-12"  id="proj_img12">
+						                			<div class="caption caption-12" id="caption-12">
+							                			<h3>Project 12</h3>
+							                		</div>
+							                		<img src="sources/img/projects/project_first.png" alt="Image" style="max-width:100%;">
+						                		</a>
+					                		</div>
+		
+					                		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 proj proj_hidden proj_hidden_small"><a class="thumbnail hidden_div"><img src="sources/img/projects/project_first.png" alt="Image"></a></div>
+					                	</div>
+					                </div>
+			                </div>
+		                </div>
+		                </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-2 col-md-2 col-sm-4 col-xs-4">Відгуки</h2>
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<div class="col-md-12 marginishka">
+							<div class="carousel slide media-carousel" id="media">
+								<ol class="carousel-indicators">
+				                    <li data-target="#media" data-slide-to="0"></li>
+				                    <li data-target="#media" data-slide-to="1" class="active"></li>
+				                    <li data-target="#media" data-slide-to="2"></li>
+				                </ol>
+						        <div class="carousel-inner">
+						          	<div class="item">
+						            	<div class="row">
+							              	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							                	<a class="thumbnail ">
+							                		<div class="review" id="reviews1_data">
+							                			<img alt="review1_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, temporibus. Veritatis maiores blanditiis rem ut delectus? Nostrum, itaque sit at? Perferendis consectetur
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> numquam voluptates, consequatur, eligendi magni facere quae corporis.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Front-end Developer</h4>
+							                		</div>
+							                	</a>
+							              	</div>          
+							              	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							                	<a class="thumbnail ">
+							                		<div class="review"  id="reviews2_data">
+							                			<img alt="review2_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati autem dignissimos consectetur, veritatis reiciendis iusto assumenda commodi est laboriosam odio voluptatem! Inventore
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> nemo voluptate minus, unde laudantium sint voluptatibus sequi.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Back-end Developer</h4>
+							                		</div>
+							                	</a>
+							              	</div>
+								            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								                <a class="thumbnail ">
+								                	<div class="review"  id="reviews3_data">
+							                			<img alt="review3_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam necessitatibus placeat ipsa cumque distinctio culpa nulla mollitia, harum reiciendis quisquam temporibus
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> omnis ad similique enim, officia quas, voluptas natus dolore.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>QA Authomation</h4>
+								                	</div>
+								                </a>
+								            </div>        
+						            	</div>
+						          	</div>
+						          	<div class="item  active">
+							            <div class="row">
+								            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								                <a class="thumbnail ">
+								                	<div class="review"  id="reviews4_data">
+							                			<img alt="review4_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore provident, quia atque, soluta optio, doloribus reiciendis amet architecto earum accusantium fuga vel
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> cum omnis temporibus mollitia consequuntur animi vitae.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Business Intelligence </h4>
+								                	</div>
+								                </a>
+								            </div>          
+								            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								                <a class="thumbnail ">
+								                	<div class="review"  id="reviews5_data">
+							                			<img alt="review5_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dignissimos hic amet cupiditate impedit quia in praesentium, nostrum voluptates magni esse officiis 
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden">recusandae qui eos asperiores, aliquam explicabo voluptatum. Totam!</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>HR</h4>
+								                	</div>
+								                </a>
+								            </div>
+								            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								                <a class="thumbnail ">
+								                	<div class="review"  id="reviews6_data">
+							                			<img alt="review6_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consequuntur culpa impedit a eum, recusandae. Itaque excepturi molestiae, quam dolorum quaerat deserunt 
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden">veritatis, nihil modi sint saepe tempore dolore consequatur.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Team Leader</h4>
+								                	</div>
+								                </a>
+								            </div>        
+							            </div>
+						          	</div>
+						          	<div class="item">
+						            	<div class="row">
+						              		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						                		<a class="thumbnail ">
+						                			<div class="review"  id="reviews7_data">
+							                			<img alt="review7_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam architecto libero quisquam repellat commodi atque at harum a, ea. Alias ut ullam quod harum delectus
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> consectetur saepe laboriosam, exercitationem suscipit.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Technical Leader</h4>
+						                			</div>
+						                		</a>
+						              		</div>          
+						              		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						                		<a class="thumbnail ">
+						                			<div class="review"  id="reviews8_data">
+							                			<img alt="review8_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi autem reiciendis itaque ea consequatur, quod quae repellat! Maxime iusto non repudiandae obcaecati
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> officiis quia voluptatibus, temporibus, minus sed, culpa in.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Business Analytic</h4>
+						                			</div>
+						                		</a>
+						              		</div>
+						              		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						                		<a class="thumbnail ">
+						                			<div class="review"  id="reviews9_data">
+							                			<img alt="review9_img" src="sources/img/reviews/alumnus.png" class="circl_img">
+							                			<p>
+							                				<span class="span_visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus accusamus recusandae quia sunt nam et, eius ipsa in mollitia provident ad asperiores quisquam,
+							                				</span><span class="dots">...</span>
+							                				<span class="span_hidden"> repellat perferendis veritatis atque. Totam, esse, temporibus.</span>
+							                			</p>
+							                			<h3>Lorem Ipsum</h3>
+							                			<h4>Front-end Developer</h4>
+						                			</div>
+						                		</a>
+						              		</div>      
+						            	</div>
+						          	</div>
+						        </div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		 <section class="partners" id="partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<h2 class="col-lg-2 col-md-2 col-sm-4 col-xs-4">Партнери</h2>
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-4 lines"><span class="line"></span></div>
+						<div class="col-md-12 marginishka">
+							<div class="carousel slide media-carousel" id="partner">
+						        <div class="carousel-inner">
+						          	<div class="item  active">
+						            	<div class="row">
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="infopulse_logo" src="sources/img/partners/infopulse.png"></a>
+							              	</div>          
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="ciklum_logo" src="sources/img/partners/ciklum.png"></a>
+							              	</div>
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="luxoft_png" src="sources/img/partners/luxoft.png"></a>
+							              	</div> 
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="playtech_logo" src="sources/img/partners/playtech.png"></a>
+							              	</div>          
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="epam_logo" src="sources/img/partners/epam.png"></a>
+							              	</div>
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="globallogic_logo" src="sources/img/partners/globallogic.png"></a>
+							              	</div>      
+						            	</div>
+						         	</div>
+							        <div class="item">
+							            <div class="row">
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="engagepoint_logo" src="sources/img/partners/engagepoint.png"></a>
+							              	</div>          
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="intropro_logo" src="sources/img/partners/intropro.png"></a>
+							              	</div>
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="netcracker_logo" src="sources/img/partners/netcracker.png"></a>
+							              	</div> 
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="pnn_logo" src="sources/img/partners/pnn.png"></a>
+							              	</div>          
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="miratech_logo" src="sources/img/partners/miratech.png"></a>
+							              	</div>
+							              	<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 partner">
+							                	<a class="thumbnail"><img alt="softserve_logo" src="sources/img/partners/softserve.png"></a>
+							              	</div>       
+							            </div>
+							        </div>
+						        </div>
+						        <a data-slide="prev" href="#partner" class="left carousel-control"><img src="sources/img/partners/prev_partners.png" alt=""></a>
+						        <a data-slide="next" href="#partner" class="right carousel-control"><img src="sources/img/partners/next_partners.png" alt=""></a>
+						      </div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> 
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<h5>Приєднуйтесь до нас в соцмережах:</h5>
+						<p class="contacts">
+							<a href="https://www.facebook.com/BionicUniversity" target="_blank"><img src="sources/img/contacts/facebook.png" alt="facebook"></a> 
+							<a href="https://vk.com/bionicuniversity" target="_blank"><img src="sources/img/contacts/vkontakte.png" alt="vkontakte"></a>
+							<a href="https://www.linkedin.com/company/5038601" target="_blank"><img src="sources/img/contacts/linkedin.png" alt="linkedin"></a>
+							<a href="https://www.youtube.com/channel/UCVXfSyq0Qs3auJ4bPv4UXVg" target="_blank"><img src="sources/img/contacts/youtube.png" alt="youtube"></a>
+							<a href="https://www.instagram.com/explore/locations/66757893/bionic-university/" target="_blank"><img src="sources/img/contacts/instagram.png" alt="instagram"></a>
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<h5>Контакти:</h5>
+						<h6>Київ, вул. Сім'ї Хохлових, 8</h6>
+						<h6>тел: 067 555 67 687</h6>
+						<h6>internship@bionicschool.com.ua</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="sources/js/script.js"></script>
+	<script>
+	    	// Next slide
+			$('#right').click(function() {
+	    		$('.about_us .carousel').carousel('next');
+	  		});
+	  		$('#left').click(function() {
+	    		$('.about_us .carousel').carousel('prev');
+	  		});
+	</script>
+</body>
+</html>
