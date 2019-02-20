@@ -122,8 +122,6 @@ h3 {
 
     bottom: 0;
     left: 0;
-    /*border-top: 1px solid #e9e9e9;*/
-    /*border-bottom: 1px solid #fff;*/
 }
 
 .form-body .input-item {
@@ -294,7 +292,8 @@ h3 {
 }
 
 .logo-header {
-	margin: 0 auto 15px;
+	/*margin: 0 auto 15px;*/
+	width: 50%;
 	text-align: center;
 }
 
@@ -321,7 +320,8 @@ h3 {
 }
 
 .phones-header {
-	width: 100%;
+	/*width: 100%;*/
+	width: 40%;
 }
 
 .phones {
@@ -344,7 +344,7 @@ h3 {
 }
 
 .phones span:first-child {
-	margin-right: 25px;
+	/*margin-right: 25px;*/
 }
 
 .phones span:first-child::before,
@@ -375,7 +375,8 @@ a[href^="tel:"] {
 }
 
 .ask-question-header {
-	width: 100%;
+	/*width: 100%;*/
+	width: 50%;
 	text-align: center;
 	margin-left: 20px;
 }
@@ -385,7 +386,8 @@ a[href^="tel:"] {
 }
 
 .messengers-header {
-	width: 100%;
+	/*width: 100%;*/
+	width: 20%;
 	vertical-align: middle;
 	text-align: center;
 	padding: 15px 0 0;
@@ -403,7 +405,7 @@ a[href^="tel:"] {
 }
 
 .lviv-header {
-	display: inline-block;
+	display: none;
 	width: 100%;
 	text-align: center;
 }
@@ -490,10 +492,6 @@ a[href^="tel:"] {
 	background-color: #fff;
 	padding: 70px 0 35px;
     text-align: center;
-}
-
-.our-services .col-lg-2 {
-	max-width: 20%;
 }
 
 .service {
@@ -906,6 +904,10 @@ a[href^="tel:"] {
 /*// Large devices (desktops, 992px and up)*/
 /*@media (min-width: 992px) and (max-width: 1199.98px) {*/
 @media (min-width: 992px) and (max-width: 1023.98px) {
+	.our-services .col-lg-2 {
+		max-width: 20%;
+	}
+
 	/*.logo-header {
 		margin-bottom: 0;
 	}
@@ -1006,6 +1008,10 @@ a[href^="tel:"] {
 
 	.menu-header .navbar-nav .nav-link:first-child::before {
 		display: none;
+	}
+
+	.lviv-header {
+		display: inline-block;
 	}
 
 	.banner {
