@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BakeryKing</title>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="basketModal" tabindex="-1" role="dialog" aria-labelledby="basketModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="basketModalLabel">Корзина</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Назва товару</th>
+                        <th scope="col">Кількість</th>
+                        <th scope="col">Сума</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Круасан з шоколадом</th>
+                        <td>
+                            <input type="text" value="2">
+                        </td>
+                        <td>75грн</td>
+                        <td>
+                            <button type="button" class="btn">Видалити</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <div class="info">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">Ім'я</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Прізвище</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="form-group">
+                          <label for="phoneNumber">Номер телефону</label>
+                          <input type="tel" class="form-control" id="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адреса доставки</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Не передзвонюйте</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-order">Замовити</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <header id="header" class="header bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">BakeryKing</a>
+    
+                <button type="button" class="btn btn-basket"  data-toggle="modal" data-target="#basketModal">Корзина</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main-page" class="main-page">
+        <div class="container">
+            <h2>Каталог випічки</h2>
+
+            <div class="row no-gutters">
+                <div class="col-12 col-md-3">
+                    <div class="item">
+                        <a href="item.html">
+                            <img src="src/img/item1.jpg" alt="item1.jpg">
+                            <h5>Круасан з шоколадом</h5>
+                        </a>
+                        <p>35 грн</p>
+                        <button class="btn btn-item">До кошика</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="item">
+                        <a href="item.html">
+                            <img src="src/img/item1.jpg" alt="item1.jpg">
+                            <h5>Круасан з шоколадом</h5>
+                        </a>
+                        <p>35 грн</p>
+                        <button class="btn btn-item">До кошика</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer bg-dark">
+        <div class="container">
+            <p>Copyright by: <a href="#">Valianok</a></p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- Pooper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Custom scripts -->
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

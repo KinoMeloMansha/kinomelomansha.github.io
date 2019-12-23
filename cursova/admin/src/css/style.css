@@ -1,0 +1,41 @@
+.login-body {
+    position: relative;
+}
+
+.login {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    width: 90%;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.login .btn {
+    background-color: hotpink;
+    color: #fff;
+}
+
+.login .btn:hover {
+    background-color: blueviolet;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+
+    .login form {
+        width: 50%;
+    }
+}
+

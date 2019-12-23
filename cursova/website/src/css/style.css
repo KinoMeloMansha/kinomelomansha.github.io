@@ -1,0 +1,81 @@
+.btn-basket {
+    color: hotpink;
+}
+
+.btn-basket:hover {
+    color: blueviolet;
+}
+
+.main-page {
+    padding: 45px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.item {
+    padding: 25px;
+    text-align: center;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+a {
+    color: black;
+}
+
+.item .btn,
+.btn-order {
+    background-color: hotpink;
+    color: #fff;
+}
+
+.item .btn:hover,
+.btn-order:hover {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.footer {
+    padding: 25px 0;
+}
+
+.footer p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p a {
+    color: hotpink;
+}
+
+.footer p a:hover {
+    color: blueviolet;
+}
+
+.table input {
+    width: 25px;
+    text-align: center;
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+}

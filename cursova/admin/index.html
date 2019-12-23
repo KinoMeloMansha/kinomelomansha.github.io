@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin panel</title>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">BakeryKing</a>
+
+            <button class="btn btn-logout">Log out</button>
+          </nav>
+    </header>
+
+    <section id="admin-panel" class="admin-panel">
+        <table class="table table-bordered table-hover table-responsive table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Номер замовлення</th>
+                <th scope="col">Дата та час замовлення</th>
+                <th scope="col">Замовник</th>
+                <th scope="col">Номер телефону</th>
+                <th scope="col">Адрес доставки</th>
+                <th scope="col">Товари</th>
+                <th scope="col">Сума</th>
+                <th scope="col">Статус</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">№4353</th>
+                <td>23.12.2019 / 7:30</td>
+                <td>Іванов Іван</td>
+                <td>+380984567378</td>
+                <td>вул. Горбачевського, 18</td>
+                <td>
+                    <ul>
+                        <li>Крендель зі згущеним молоком, 2шт</li>
+                        <li>Вишневий пиріг, 1шт</li>
+                    </ul>
+                </td>
+                <td>250грн</td>
+                <td>Виконано</td>
+              </tr>
+              <tr>
+                <th scope="row">№4354</th>
+                <td>23.12.2019 / 7:35</td>
+                <td>Смайл Олександра</td>
+                <td>+380626743287</td>
+                <td>вул. Горбачевського, 18</td>
+                <td>
+                    <ul>
+                        <li>Круасан з шоколадом, 1шт</li>
+                        <li>Пончик з арахісом, 1шт</li>
+                    </ul>
+                </td>
+                <td>75грн</td>
+                <td>Активний</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- Pooper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Custom scripts -->
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
